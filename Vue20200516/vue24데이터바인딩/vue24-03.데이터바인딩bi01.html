@@ -18,7 +18,7 @@
     </style>
 
     <!-- vue 스크립트 플러그인 임포트   -->
-    
+    <script src="https://unpkg.com/vue@2.5.16/dist/vue.js">/* vue 플러그인 임포트 */</script> 
 
 </head>
 
@@ -109,4 +109,40 @@
     </div>
 </body>
 </html>
-
+<script>
+    new Vue({
+        el:"#my",
+        data:{
+            message:'Hello vue.js!!'
+        },
+    });
+
+    new Vue({
+        el:"#simple1",
+        data:{
+            message:'<i>첫번째</i>'
+        },
+    });
+
+    new Vue({
+        el:"#simple2",
+        data:{
+            message:'<i>두번째</i>'
+        },
+    });
+
+    new Vue({
+        el:"#simple3",
+        data:{
+            message:'<i>세번째</i>'
+        },
+    });
+
+    new Vue({
+        el:"#simple4",
+        data:{
+            message:'<i>aaa</i>'
+        },
+    });
+</script>
+

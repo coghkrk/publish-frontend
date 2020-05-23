@@ -1,32 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vue Sample</title>
 
     <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
 
     <!-- CSS import -->
-    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/reset.css" />
 
     <!-- vue 스크립트 플러그인 임포트   -->
-    
-    
-    
-    
 
-    
-    
-    
-
-    
-
-</head>
-<body>
-    <xmp>
+    <script src="https://unpkg.com/vue@2.5.16/dist/vue.js">
+      /* vue 플러그인 임포트 */
+    </script>
+  </head>
+  <body>
+    <xmp
+>
         Vue 인스턴스 유효범위란?
+        인스턴스가 다르면 데이터를 공유할 수없다.
+        
+        인스턴스가 다른 겨우 어떻게 하면 데이터를 공유하게 할 수 있나요?
+        자바스크립트 타입
+        value 타입 : string, boolean,number
+        reference 타입 : Array, Funtion, Object ...
 
         Vue 인스턴스 적용 과정
             . Vue 라이브러리 로딩
@@ -37,15 +40,27 @@
 
         [참조]page 42~44
     </xmp>
-    <hr>
+    <hr />
 
     <div id="app">
-        {{ message }}
+      {{ message }}
     </div>
 
     <div id="app2">
-        {{ message }}
+      {{ message }}
     </div>
-</body>
+  </body>
 </html>
-
+<script>
+  var shared = {
+    message: "Hello",
+  };
+  var vm1 = new Vue({
+    el: "#app",
+    data: shared
+  });
+  var vm2 = new Vue({
+    el: "#app2",
+    data: shared
+  });
+</script>

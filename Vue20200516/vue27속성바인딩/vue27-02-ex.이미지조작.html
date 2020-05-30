@@ -1,27 +1,102 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <style>
-        img { padding:5px; width:130px; height:130px; border:1px solid gray; }
+      img {
+        padding: 5px;
+        width: 130px;
+        height: 130px;
+        border: 1px solid gray;
+      }
     </style>
-</head>
-<body>
+    <script src="https://unpkg.com/vue@2.5.16/dist/vue.js"></script>
+  </head>
+  <body>
     <h2>&lt;img id="" src="" title="" alt="" /&gt;</h2>
-
-    <h3>어트리뷰트 추가</h3>
-    <img id="img1" src="../images/im1.jpg" title="im1.jpg" alt="im1.jpg" />
-    <img id="img2" />
-    <img id="img3" />
-    <img id="img4" />
-    <img id="img5" title="im5.jpg" />
-
+    <div id="app">
+      <h3>어트리뷰트 추가</h3>
+      <img
+        id="img1"
+        src="../images/im1.jpg"
+        title="im1.jpg"
+        alt="im1.jpg"
+        v-on:click="imgBtn1"
+      />
+      <img id="img2" v-on:click="imgBtn2" v-bind:src="imagePath2" />
+      <img id="img3" v-on:click="imgBtn3" v-bind:src="imagePath3" />
+      <img id="img4" v-on:click="imgBtn4" v-bind:src="imagePath4" />
+      <img id="img5" v-on:click="imgBtn5" v-bind:src="imagePath5" />
+    </div>
     <h3>어트리뷰트 제거</h3>
-    <img id="img6" src="../images/im5.jpg" title="im5" alt="im5.jpg" />
-</body>
+    <img
+      id="img6"
+      v-bind:src="imagePath6"
+      title="im5"
+      alt="im5.jpg"
+      v-on:click="imgBtn6"
+    />
+  </body>
 </html>
+<script>
+  new Vue({
+    el: "#img2",
+    data: {
+      imagePath2: "",
+    },
+    methods: {
+      imgBtn2: function (event) {
+        this.$data.imagePath2 = "../images/im2.jpg";
+      },
+    },
+  });
+  new Vue({
+    el: "#img3",
+    data: {
+      imagePath3: "",
+    },
+    methods: {
+      imgBtn3: function (event) {
+        this.$data.imagePath3 = "../images/im3.jpg";
+      },
+    },
+  });
+  new Vue({
+    el: "#img4",
+    data: {
+      imagePath4: "",
+    },
+    methods: {
+      imgBtn4: function (event) {
+        this.$data.imagePath4 = "../images/im4.jpg";
+      },
+    },
+  });
 
+  new Vue({
+    el: "#img5",
+    data: {
+      imagePath5: "",
+    },
+    methods: {
+      imgBtn5: function (event) {
+        this.$data.imagePath5 = "../images/im5.jpg";
+      },
+    },
+  });
+
+  new Vue({
+    el: "#img6",
+    data: {
+      imagePath6: "../images/im5.jpg",
+    },
+    methods: {
+      imgBtn6: function (event) {
+        this.$data.imagePath6 = "";
+      },
+    },
+  });
+</script>
 <!-- 임포트 -->
-

@@ -56,29 +56,30 @@
   </body>
 </html>
 <script>
-  vue.component("component-main", {
+  Vue.component("component-main", {
     template: `
-              <div>
-                  main
-              </div>
-          `,
+          <div>
+              main
+          </div>
+      `,
   });
-  vue.component("component-login", {
+  Vue.component("component-login", {
     template: `
-              <div>
-                  login
-              </div>
-          `,
+          <div>
+              login
+          </div>
+      `,
   });
 
-  var routes = new VueRoutes({
+  // 뷰 라우팅 정의
+  var router = new VueRouter({
     routes: [
       { path: "/main", component: Vue.component("component-main") },
       { path: "/login", component: Vue.component("component-login") },
     ],
   });
 
-  //뷰 라우터를 뷰 인스턴스에 등록
+  // 뷰 라우터를 뷰 인스턴스에 등록
   new Vue({
     router,
   }).$mount("#app");

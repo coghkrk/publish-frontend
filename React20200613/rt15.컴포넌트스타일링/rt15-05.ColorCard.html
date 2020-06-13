@@ -87,58 +87,45 @@
 </script>
 <script type="text/babel">
   console.log(ReactDOM);
-  var letter = {
-    fontFamily: "sans-serif",
-    fontWeight: "bold",
-    padding: "13px",
-    margin: "0",
-    textAlign: "center",
-  };
-  var card1 = {
-    padding: "50px",
-    backgroundColor: "#ffffff",
-    display: "inline-block",
-    height: "200px",
-    width: "150px",
-    padding: "0",
-    margin: "10px",
-    backgroundColor: "#ffffff",
-    webkitFilter: "drop-shadow(0px 0px 5px #666666)",
-    filter: "drop-shadow(0px 0px 5px #666666)",
-    height: "150px",
-    backgroundColor: "#ff6663",
-  };
-  var card2 = {
-    padding: "50px",
-    backgroundColor: "#ffffff",
-    display: "inline-block",
-    height: "200px",
-    width: "150px",
-    padding: "0",
-    margin: "10px",
-    backgroundColor: "#ffffff",
-    webkitFilter: "drop-shadow(0px 0px 5px #666666)",
-    filter: "drop-shadow(0px 0px 5px #666666)",
-    height: "150px",
-    backgroundColor: "#ffa737",
-    fontFamily: "sans-serif",
-    fontWeight: "bold",
-    padding: "13px",
-    margin: "0",
-    textAlign: "center",
-  };
 
   class Style extends React.Component {
     render() {
+      var card = {
+        display: "inline-block",
+        height: "200px",
+        width: "150px",
+        padding: "0",
+        margin: "10px",
+        backgroundColor: "#ffffff",
+        webkitFilter: "drop-shadow(0px 0px 5px #666666)",
+        filter: "drop-shadow(0px 0px 5px #666666)",
+      };
+      var square = {
+        height: "150px",
+        backgroundColor: this.props.bgcolor,
+      };
+      var label = {
+        fontFamily: "sans-serif",
+        fontWeight: "bold",
+        padding: "13px",
+        margin: "0",
+        textAlign: "center",
+      };
       return (
         <div>
-          <div style={card1}>
-            <div class="label">#ff6663</div>
+          <div style={card}>
+            <div style={square}></div>
+            <div style={label}>{this.props.children}</div>
           </div>
-          <div style={card2}></div>
         </div>
       );
     }
   }
-  ReactDOM.render(<Style></Style>, document.getElementById("app"));
+  ReactDOM.render(
+    <div>
+      <Style bgcolor="#ff6663">#ff6663</Style>
+      <Style bgcolor="#ffa737">#ffa737</Style>
+    </div>,
+    document.getElementById("app")
+  );
 </script>

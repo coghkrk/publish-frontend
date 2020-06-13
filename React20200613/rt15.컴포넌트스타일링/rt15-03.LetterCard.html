@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Letter Card</title>
+
+    <link rel="stylesheet" href="../css/reset.css" />
+
+    <style>
+      .letter {
+        padding: 10px;
+        margin: 10px;
+        color: #333333;
+        display: inline-block;
+        font-family: monospace;
+        font-size: 32px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <xmp
+>
+        컴포넌트에 CSS를 적용하는 방법을 학습한다.
+        컴포넌트에 인라인 스타일링을 사용한다.
+    </xmp>
+    <hr />
+
+    <h2>스타일로 만든</h2>
+    <div class="App">
+      <div class="letter" style="background-color: #58b3ff;">A</div>
+      <div class="letter" style="background-color: #ff605f;">E</div>
+      <div class="letter" style="background-color: #ffd52e;">I</div>
+      <div class="letter" style="background-color: #49dd8e;">O</div>
+      <div class="letter" style="background-color: #ae99ff;">U</div>
+    </div>
+    <hr />
+
+    <h2>컴포넌트로 만든</h2>
+    <div id="app"></div>
+  </body>
+</html>
+
+<!-- react 플러그인 include   -->
+<!-- 주의: 사이트를 배포할 때는 "development.js"를 "production.min.js"로 대체하세요. -->
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/react/16.12.0/umd/react.development.js"
+>
+  /* import { React} from 'react'; */
+</script>
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.11.0/umd/react-dom.development.js"
+>
+  /* import { ReactDOM } from 'react-dom'; */
+</script>
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.js"
+>
+  /* JSX를 자바스크립트로 변환 */
+</script>
+<script type="text/babel">
+  console.log(ReactDOM);
+
+  class Style extends React.Component {
+    /* 필드 */
+    render() {
+      var letter = {
+        padding: "10px",
+        margin: "10px",
+        color: "#333333",
+        display: "inline-block",
+        fontFamily: "monospace",
+        fontSize: "32px",
+        textAlign: "center",
+        backgroundColor: this.props.bgcolor,
+      };
+
+      /* return (
+        <div>
+          <div style={bg1}>A</div>
+          <div style={bg2}>E</div>
+          <div style={bg3}>I</div>
+          <div style={bg4}>O</div>
+          <div style={bg5}>U</div>
+        </div>
+      );
+      */
+      return <div style={letter}>{this.props.children}</div>;
+    }
+  }
+  ReactDOM.render(
+    <div>
+      <Style bgcolor="#58b3ff">a</Style>
+      <Style bgcolor="red">b</Style>
+      <Style bgcolor="yellow">c</Style>
+      <Style bgcolor="green">d</Style>
+      <Style bgcolor="purple">e</Style>
+    </div>,
+    document.getElementById("app")
+  );
+</script>

@@ -46,7 +46,7 @@
 
   var elements = ["one", "two", "three"];
 
-  //for - of 사용예제
+  //for - of 사용예제 2번째 방식
   var items = [];
   for (const [key, value] of elements.entries()) {
     //JSX를 items 배열에 추가
@@ -55,6 +55,8 @@
 
   ReactDOM.render(<div>{items}</div>, document.getElementById("wrap2"));
 
+
+//3번째 방식
   ReactDOM.render(
     <div>
       {elements.map(function (value, key) {

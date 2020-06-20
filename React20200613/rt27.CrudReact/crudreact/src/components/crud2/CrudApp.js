@@ -19,32 +19,39 @@ export default class CrudApp extends Component {
   constructor(props) {
     super(props);
 
+    //this bind처리
+    this.insert = this.insert.bind(this);
+    this.doDel = this.doDel.bind(this);
     this.doUp = this.doUp.bind(this);
     this.doDown = this.doDown.bind(this);
     this.doEdit = this.doEdit.bind(this);
-    this.doDel = this.doDel.bind(this);
-    this.insert = this.insert.bind(this);
   }
-
   insert(user) {
-    // user를 list에 추가하기 push() 나 스프레드 연산자 활용해서
+    //input에 입력한 값들을 list에 추가하기
+    console.log(user);
 
-    /* 최대,최소값
-        array.reduce(function(prev, next){
-            return prev>next? prev:next;  //최대값
-            return prev>next? next:prev;  //최대값
-        })
-        */
-
-    var max = this.state.list.reduce(function (a, b) {
+    const max = this.state.list.reduce((a, b) => {
       return a.id > b.id ? a.id : b.id;
     });
-    const newUser = { id: max + 1, name: user.name, power: user.power };
-    let listCopy = [...this.state.list, newUser];
+    const newMan = {
+      id: max + 1,
+      name: user.name,
+      power: user.power,
+    };
+    // newMan과 this.state.list를 합치기
+    let listCopy = { ...this.state.list, newMan };
 
     this.setState({
       list: listCopy,
-      user: { id: 0, name: "", power: 0 },
+    });
+  }
+  doDel(id) {
+    //배열에서 삭제=> splice(index, count)
+    let listCopy = this.state.list.filter((man) => {
+      return man.id !== id;
+    });
+    this.setState({
+      list: listCopy,
     });
   }
   doUp(id) {
@@ -55,7 +62,9 @@ export default class CrudApp extends Component {
       }
       return man;
     });
-    this.setState({ list: listCopy });
+    this.setState({
+      list: listCopy,
+    });
   }
   doDown(id) {
     //50씩 감소
@@ -65,40 +74,37 @@ export default class CrudApp extends Component {
       }
       return man;
     });
-    this.setState({ list: listCopy });
+    this.setState({
+      list: listCopy,
+    });
   }
   doEdit(user) {
     //선택한 사람 정보를 input에 보여주기
     let listCopy = this.state.list.map(function (man) {
-      if (man.id === this.id) return this;
-      else return man;
+      if (man.id === this.id) {
+        return this;
+      } else {
+        return man;
+      }
     }, user);
-
-    this.setState({ list: listCopy });
+    this.setState({
+      list: listCopy,
+    });
   }
-  doDel(id) {
-    //배열에서 삭제
-    let r = window.confirm("정말로 삭제 하시겠습니까?");
-    if (r) {
-      let listCopy = this.state.list.filter((man) => {
-        return man.id !== id;
-      });
-      this.setState({ list: listCopy });
-    }
-  }
-  render(props) {
+  render() {
     return (
       <div>
-        <CrudInput {...this.state} insert={this.insert}></CrudInput>
+        <CrudInput insert={this.insert} />
         <hr />
         <CrudList
-          {...this.state}
+          list={this.state.list}
+          doDel={this.doDel}
           doUp={this.doUp}
           doDown={this.doDown}
-          doEdit={this.doEdit}
-          doDel={this.doDel}
-        ></CrudList>
+          doEdit={this.Edit}
+        />
       </div>
-    );
+    ); //state를 다 넘기고 싶을땐 {...this.state.list}
+    //state를 하나만 넘기고 싶을땐 {this.state.list}
   }
 }

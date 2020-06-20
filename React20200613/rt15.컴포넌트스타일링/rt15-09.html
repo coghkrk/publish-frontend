@@ -4,29 +4,29 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Document</title>
+    <title>react 번개 카운터</title>
 
     <link rel="stylesheet" href="../css/reset.css" />
+    <style>
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        color: white;
+      }
+    </style>
   </head>
 
   <body>
-    <xmp>
-        리액트를 사용하여 컬러라이저를 만들어 본다.
+    <xmp
+>
+        styled-component 방식에서 자주 사용되는
+        스타일 상속 방법을 실습을 통해 배운다.
 
-        목적: 컬러라이저는 흰색의 정사각형을 원하는 컬러로 바꿔주는 컴포넌트이다.
-        텍스트 필드에 원하는 컬러 이름을 입력하고 go 버튼을 클릭하면 입력한 컬러로
-        정사각형의 컬러가 바뀌게 된다.
-
-        기능: 컬러가 바뀐 후에는 기존의 입력 값을 지우고 텍스트 입력 창에 포커스가 가도록 있도록 만드시오
-
-        <form></form> 태그 내부에 둘러싸여진 input text 박스에서 포커스가 있을 때
-        Enter 를 누르게 되면 자동으로 submit 이 된다. 이것은 form 내부에
-        input 박스가 하나만 존재해서 그렇다. 이 기능을 막고자 한다
-            (1) keycode 값을 판단해서 처리
-            (2) form 태그의 속성값으로 막기
-            (3) 크기가 없는 input 박스 하나더 추가해준다.
     </xmp>
-    <hr />
+
     <div id="app">
       <div
         style="
@@ -75,11 +75,6 @@
           since you loaded this example
         </p>
       </div>
-
-      <div>
-        <input type="text" name="color" placeholder="Enter a color" />
-        <button class="styleButton">go</button>
-      </div>
     </div>
   </body>
 </html>
@@ -95,12 +90,19 @@
   console.log(ReactDOM);
 
   class StyleInherit extends React.Component {
-    state = {
-      bgColor: "black",
-    };
     styleCommon = {
       margin: "0px",
       padding: "0px",
+      fontFamily: "sans-serif",
+      color: "white",
+    };
+    styleDiv = {
+      width: "250px",
+      backgroundColor: "black",
+      padding: "0px",
+      borderRadius: "10px",
+      textAlign: "center",
+      margin: "0px",
       fontFamily: "sans-serif",
       color: "white",
     };
@@ -118,55 +120,13 @@
       opacity: "0.5",
       ...this.styleCommon,
     };
-
-    constructor(props) {
-      super(props);
-      //this bind처리
-      this.handlerClick = this.handlerClick.bind(this);
-      this.handlerNewColor = this.handlerNewColor.bind(this);
-      this.handlerChange = this.handlerChange.bind(this);
-
-      //ref 처리
-      this.refColor = React.createRef();
-    }
-
-    handlerClick(e) {
-      //input 태그의 컬럼값 가져오기
-      const currentColor = this.refColor.current.value;
-
-      //버튼을 클릭하면 this.state.bgcolor값을 바꾼다
-      this.setState({
-        bgcolor: currentColor,
-      });
-    }
-    handlerChange(e) {
-      this.state.bgcolor = e.target.value;
-    }
-    handlerNewColor(e) {}
-
     render() {
-      styleDiv = {
-        width: "250px",
-        backgroundColor: this.state.bgcolor,
-        padding: "0px",
-        borderRadius: "10px",
-        textAlign: "center",
-        margin: "0px",
-        fontFamily: "sans-serif",
-        color: "white",
-      };
       return (
-        <div style={this.styleCommon}>
-          <div style={styleDiv}></div>
-          <div>
-            <input
-              type="text"
-              name="color"
-              placeholder="Enter a color"
-              ref={this.refColor}
-            />
-            <button onClick={this.handlerClick}>go</button>
-          </div>
+        <div style={this.styleDiv}>
+          <h1 style={this.styleH1}>2700</h1>
+          <h2 style={this.styleCommon}>번개</h2>
+          <h2 style={this.styleEmphasis}>강조</h2>
+          <p style={this.styleSmall}>since you loaded this example</p>
         </div>
       );
     }

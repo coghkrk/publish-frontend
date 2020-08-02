@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bmi.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<body>
+    <div id="bmi">
+        <h1>BMI계산기</h1>
+        <div class="contents">    
+            <label><span>체중</span><input type="text" name="체중" id="myWeight" value="57"></label>
+            <label><span>키</span><input type="text" name="키" id="myHeight" value="155"></label>
+            <button class="btn calc">계산</button>
+            <button class="btn reset">초기화</button>
+        </div>
+        <div class="result">
+            나의 체질량 지수는 <span class="num"></span><span class="txt"></span>
+        </div>
+    </div>
+
+    <script>
+
+        // function dubae(x) {
+        //     //console.log(x*2);
+        //     return x*2;
+        // }
+        // dubae(9);
+
+        // //평균을 돌려받는 함수
+        // function average(A,B,C) {
+        //     return (A+B+C)/3;
+        // }
+        // average(10,30,45);
+
+        //리모컨.채널(11번) === mbc;
+        // $ -> alias, (내가 찾고자 하는 객체 입력)
+        //제이쿼리 $("myWeight").val(); = 자바스크립트 document.querySelectorAll("myWeight");
+        $("#bmi .calc").on( "click" , function (){
+            //함수에 이름이 없는 함수를 익명함수라고 한다 
+            // 이벤트에 반응해 호출되었을때 호출되는 함수를 callback함수 라고 한다. 
+            //console.log("사용자가 .calc을 클릭했다. 이것을 on 메소드를 통해 잡아내고 있다.");
+            var myWeight = $("#myWeight").val();
+            var myHeight = $("#myHeight").val();
+            var miterHeight = myHeight/10;
+            var myBmi = myWeight / (miterHeight * miterHeight)*100;
+            $("#bmi .result .num").text(seperation(myBmi,3));
+            //console.log("myBmi", myBmi)
+            if(myBmi <= 18.5) {
+                $("#bmi .result .txt").text( "당신은 저체중입니다" );
+            }else if(myBmi <= 23 ) {
+                //&& -> 그리고 and
+                $("#bmi .result .txt").text( "당신은 정상체중입니다" );
+            }else if(myBmi <= 25) {
+                $("#bmi .result .txt").text( "당신은 과체중입니다" );
+            }else if(myBmi <= 30) {
+                console.log();
+                $("#bmi .result .txt").text( "당신은 비만입니다" );
+            }else {
+                $("#bmi .result .txt").text( "당신은 고도비만입니다" );
+            }
+        });
+
+        //소숫점 끊어내는 함수 
+        function seperation(num,cipher){
+            return Math.round(num*Math.pow(10, cipher))/Math.pow(10, cipher);
+        }
+
+        //  method, properties
+    </script>
+</body>
+</html>

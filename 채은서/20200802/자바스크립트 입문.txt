@@ -45,3 +45,29 @@ https://gomcine.tistory.com/entry/VS-Code-Extension-%EC%84%A4%EC%B9%98-%EB%B0%8F
 https://kcmschool.com/224
 https://api.jquery.com/
 http://naver.me/5xNSvkGO 비밀번호 2242
+
+
+
+===================2020.08.09================================
+
+- position : 넓이를 주지 않은 상태에서 left right를 먹이면 right는 무시 됨
+  left right동시에 지정하면 넓이로 인식함
+- trnasition은 수치표시가 가능한 친구들만 사용할 수 있음 nav depth엔 적용이 안됨
+- .slideDown( [duration: 매개변수/ 써도 되고 안써도 됨 ] [, complete: 애니메이션이 끝났을 때 실행할 함수  ] )
+
+https://m.place.naver.com/my/place/detailList/5b99f6dbd7eaf20adc9600a5?close
+
+- array sort();
+  소팅할때는 대괄호값 대부분 작성함 
+
+- 캐러셀/슬라이드/slick.js/swiper.js(제이쿼리 없이도 가능/뷰 리액트 사용시 많이 사용함 기능도 제일 많음)/bxSlider.js
+
+- xeicon
+
+- 페이지네이션
+
+- 장마철에 스파게티 먹으면 어떻게 되나요?
+ 습하게띠
+
+
+

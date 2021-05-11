@@ -1,22 +1,25 @@
-body {
-  padding: 0;
-  margin: 0;
-}
-
-body div {
-  border: 1px solid blue;
-}
-
 .notice-title {
   display: inline-block;
   animation: bounce;
   text-align: center;
 }
 
-ul {
-  display: block;
+.sass-rem {
+  font-size: 1.375rem;
 }
 
-ul li {
-  list-style: none;
+.css-rem {
+  font-size: 22px;
+}
+
+@media screen and (max-width: 900px) {
+  html {
+    font-size: 1.375rem;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  html {
+    font-size: 0.6875rem;
+  }
 }

@@ -1,20 +1,33 @@
 @charset 'UTF-8';
 
-body {
-    padding: 0;
-    margin: 0;
-    div {
-        border: 1px solid blue;
-    }
+// variable
+$base-size: 16;
+
+// function
+@function size ($target, $context: $base-size) {
+    @return ($target / $context) * 1rem
 }
+
 .notice-title {
     display: inline-block;
     animation: bounce;
     text-align: center;
 }
-ul {
-    display: block;
-    li {
-        list-style: none;
+.sass-rem {
+    font-size: size(22);
+}
+.css-rem {
+    font-size: 22px;
+}
+
+@media screen and (max-width: 900px) {
+    html {
+        font-size: size(22);
     }
+}
+@media screen and (max-width: 360px) {
+    html {
+        font-size: size(11);
+    }
+
 }

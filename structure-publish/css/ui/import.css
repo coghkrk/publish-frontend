@@ -3,6 +3,6 @@
     정의 : css 불러오기
     작성자 : joy
  ---------------------------------------------------------------------- */
-@import 'reset.css';
-@import 'main.css';
-@import 'responsive.css';
+@import './min/reset.min.css';
+@import './min/main.min.css';
+@import './min/responsive.min.css';

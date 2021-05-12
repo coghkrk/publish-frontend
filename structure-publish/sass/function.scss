@@ -1,3 +1,0 @@
-@function rem ($px, $base: $base-size) {
-    @return ($px / $base) * 1rem
-}

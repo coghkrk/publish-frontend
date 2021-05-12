@@ -1,7 +1,8 @@
 @charset 'UTF-8';
 
-@import './variable.scss';
-@import './function.scss';
+@import './variable.scss'; // 변수
+@import './function.scss'; // 함수
+@import './mixin.scss' // mixin
 
 .notice-title {
     display: inline-block;
@@ -9,8 +10,8 @@
     text-align: center;
 }
 .sass-rem {
-    margin: rem(20);
-    font-size: rem(22);
+    margin: rem(20px);
+    font-size: rem(22px);
     border: 1px solid red;
 }
 .css-rem {
@@ -29,7 +30,7 @@
     }
 }
 
-@media screen and (max-width: 360px) {
+@include mobile {
     html{
         font-size: 15px;
     }

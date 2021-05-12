@@ -1,3 +1,9 @@
+/* -------------------------------------------------------
+  @ _function variable
+--------------------------------------------------------- */
+/* -------------------------------------------------------
+  @ _mixin variable
+--------------------------------------------------------- */
 .notice-title {
   display: inline-block;
   animation: bounce;
@@ -11,23 +17,7 @@
 }
 
 .css-rem {
-  margin: 20px;
-  font-size: 22px;
+  margin: 1.375rem;
+  font-size: 1.375rem;
   border: 1px solid blue;
-}
-
-@media screen and (max-width: 900px) {
-  html {
-    font-size: 32px;
-  }
-  .css-rem {
-    margin: 40px;
-    font-size: 44px;
-  }
-}
-
-@media screen and (max-width: 360px) {
-  html {
-    font-size: 15px;
-  }
 }

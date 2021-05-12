@@ -1,8 +1,26 @@
-@import './variable.scss';
+// -------------------------------------------------------
+// 파일 : _mixin.scss
+// 정의 : mixin 선언
+// 작성자 : joy
+// 작성일 : 2021.05.12
+// --------------------------------------------------------
+@import './variable';
 
 // breakpoints
 @mixin mobile {
     @media screen and (max-width: $breakpoint-mobile) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media screen and (max-width: $breakpoint-tablet) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media screen and (max-width: $breakpoint-desktop) {
         @content;
     }
 }

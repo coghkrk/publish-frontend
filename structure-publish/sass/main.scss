@@ -1,8 +1,11 @@
-@charset 'UTF-8';
-
-@import './variable.scss'; // 변수
-@import './function.scss'; // 함수
-@import './mixin.scss' // mixin
+/* --------------------------------------------------------------------
+    파일 : _mixin.scss
+    정의 :  
+    작성자 : joy
+    작성일 : 2021.05.12
+ ---------------------------------------------------------------------- */
+@import './variable'; // 변수
+@import './function'; // 함수
 
 .notice-title {
     display: inline-block;
@@ -15,23 +18,8 @@
     border: 1px solid red;
 }
 .css-rem {
-    margin: 20px;
-    font-size: 22px;
+    margin: rem(22px);
+    font-size: rem(22px);
     border: 1px solid blue;
 }
 
-@media screen and (max-width: 900px) {
-    html{
-        font-size: 32px;
-    }
-    .css-rem {
-        margin: 40px;
-        font-size: 44px;
-    }
-}
-
-@include mobile {
-    html{
-        font-size: 15px;
-    }
-}

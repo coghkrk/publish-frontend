@@ -3,16 +3,19 @@
   animation: bounce;
   text-align: center;
 }
+
 .sass-rem {
   margin: 1.25rem;
   font-size: 1.375rem;
   border: 1px solid red;
 }
+
 .css-rem {
   margin: 20px;
   font-size: 22px;
   border: 1px solid blue;
 }
+
 @media screen and (max-width: 900px) {
   html {
     font-size: 32px;
@@ -22,6 +25,7 @@
     font-size: 44px;
   }
 }
+
 @media screen and (max-width: 360px) {
   html {
     font-size: 15px;

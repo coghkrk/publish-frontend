@@ -1,12 +1,7 @@
 @charset 'UTF-8';
 
-// variable
-$base-size: 16;
-
-// function
-@function size ($target, $context: $base-size) {
-    @return ($target / $context) * 1rem
-}
+@import './variable.scss';
+@import './function.scss';
 
 .notice-title {
     display: inline-block;
@@ -14,20 +9,28 @@ $base-size: 16;
     text-align: center;
 }
 .sass-rem {
-    font-size: size(22);
+    margin: rem(20);
+    font-size: rem(22);
+    border: 1px solid red;
 }
 .css-rem {
+    margin: 20px;
     font-size: 22px;
+    border: 1px solid blue;
 }
 
 @media screen and (max-width: 900px) {
-    html {
-        font-size: size(22);
+    html{
+        font-size: 32px;
+    }
+    .css-rem {
+        margin: 40px;
+        font-size: 44px;
     }
 }
-@media screen and (max-width: 360px) {
-    html {
-        font-size: size(11);
-    }
 
+@media screen and (max-width: 360px) {
+    html{
+        font-size: 15px;
+    }
 }

@@ -1,0 +1,26 @@
+.Form {
+    
+}
+.Form p {
+    width: 100%;
+    text-align: center;
+    padding:20px 0;
+    background-color: thistle;
+}
+.Form p input {
+    width: 60%;
+    height: 40px;
+    padding: 0 10px;
+    border:2px solid #bbb;
+    border-radius: 10px;
+    vertical-align: top;    
+}
+.Form p button {
+    border: 2px solid #fff;
+    border-radius: 10px;
+    width: 90px;
+    height: 40px;
+    margin-left: 10px;
+    background-color: cadetblue;
+    color: #fff;
+}

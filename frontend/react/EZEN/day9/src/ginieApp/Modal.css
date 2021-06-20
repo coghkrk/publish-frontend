@@ -1,0 +1,41 @@
+.Modal {
+    width: 600px;
+    height: 500px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 10;
+    background-color: cornflowerblue ;
+    padding:15px;
+    display: none;
+}
+.on {
+    display: block;
+}
+.Modal h2 {
+    font-size: 25px;
+    padding: 5px 0 ;
+    color: #fff;
+}
+.Modal div {
+    width: 100%;
+}
+.Modal p {
+    margin-top: 10px;
+    font-size: 20px;
+    color: #fff;
+}
+.Modal button {
+    position: absolute;
+    right: 15px;
+    top: 20px;
+    border: none;
+    background: #fff;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    line-height: 40px;
+    text-align: center;
+    color: cornflowerblue;
+}

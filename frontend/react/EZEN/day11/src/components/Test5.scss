@@ -1,0 +1,75 @@
+.Test5 {
+    width: 100%;
+    background-color: burlywood;
+    padding: 30px;
+    .movie-box {
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        .movie-view {
+            width: 50%;
+            display: flex;
+            img {
+                width:400px;
+            }
+            div {
+                margin-left: 15px;
+                h3 {
+                    font-size: 20px;
+                }
+                span {
+                    font-size: 16px;
+                }
+                ul {
+                    margin-top: 30px;
+                    li {
+                        margin-bottom: 5px;
+                        strong {
+                            display: inline-block;
+                            width: 100px;
+                            font-weight: 600;
+                        }
+                    }
+                }
+            }
+        }
+        .movie-list {
+            width: 45%;
+            margin-left: 20px;
+            background-color: wheat;
+            table {
+                width: 100%;
+                .w1 {width: 8%;}               
+                .w2 {}               
+                .w3 {width: 30% ;}               
+                .w4 {width: 15% ;}               
+                .w5 {width: 15% ;}  
+                thead {
+                    tr {
+                        th {
+                            height: 50px;
+                            text-align: center;
+                            font-size: 15px;
+                            border-bottom: 1px solid #999;
+                        }
+                    }
+                } 
+                tbody {
+                    tr {
+                        &:hover {
+                            background-color: burlywood;
+                            cursor: pointer;
+                        }
+                        td {
+                            height: 50px;
+                            border-bottom:1px solid burlywood;
+                            padding: 0 20px;
+                           
+                        }
+                    }
+                }            
+
+            }
+        }
+    }
+}

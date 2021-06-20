@@ -1,0 +1,5 @@
+.App {}
+.App nav {margin-bottom:60px;}
+.App nav ul { display: flex }
+.App nav ul li {margin-right:20px; list-style:none;}
+.App nav ul li a {text-decoration: none; color:#333}

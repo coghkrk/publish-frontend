@@ -1,0 +1,28 @@
+.MusicList{}
+.MusicList table {
+    width: 100%;
+}
+.MusicList table .w1 {
+    width: 10%;
+}
+.MusicList table .w2 {
+    width: 20%;
+}
+.MusicList table .w3 {}
+.MusicList table .w4 {
+    width: 20%;
+}
+.MusicList table .w5 {
+    width: 10%;
+}
+.MusicList table td {
+    text-align:center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+.MusicList table th {
+    text-emphasis: center;
+    vertical-align: middle;
+    border-bottom: 1px solid #ccc;
+    padding: 5px 0;
+}

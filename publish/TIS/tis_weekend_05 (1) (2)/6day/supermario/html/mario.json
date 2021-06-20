@@ -1,0 +1,47 @@
+{
+    "mario":[
+        {
+            "img":"../images/supermario01.png",
+            "title":"FLYING MARIO",
+            "desc":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit dicta aliquam, quaerat perspiciatis eum velit ratione impedit voluptatum illo dolores culpa consectetur sunt deleniti cupiditate, provident dolorum assumenda libero. Repellat.",
+            "bg":"linear-gradient(to right, #4facfe 0%, #00f2fe 100%)"
+        },
+        {
+            "img":"../images/supermario02.png",
+            "title":"CAT MARIO",
+            "desc":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit dicta aliquam, quaerat perspiciatis eum velit ratione impedit voluptatum illo dolores culpa consectetur sunt deleniti cupiditate, provident dolorum assumenda libero. Repellat.",
+            "bg":"linear-gradient(90deg, #9ebd13 0%, #008552 100%)"
+        },
+        {
+            "img":"../images/supermario03.png",
+            "title":"FIREBALL MARIO",
+            "desc":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit dicta aliquam, quaerat perspiciatis eum velit ratione impedit voluptatum illo dolores culpa consectetur sunt deleniti cupiditate, provident dolorum assumenda libero. Repellat.",
+            "bg":"linear-gradient(90deg, #fcff9e 0%, #c67700 100%)"
+        },
+        {
+            "img":"../images/supermario04.png",
+            "title":"RUNNING MARIO",
+            "desc":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit dicta aliquam, quaerat perspiciatis eum velit ratione impedit voluptatum illo dolores culpa consectetur sunt deleniti cupiditate, provident dolorum assumenda libero. Repellat.",
+            "bg":"linear-gradient(90deg, #d53369 0%, #daae51 100%)"
+        },
+        {
+            "img":"../images/supermario05.png",
+            "title":"RACOON MARIO",
+            "desc":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit dicta aliquam, quaerat perspiciatis eum velit ratione impedit voluptatum illo dolores culpa consectetur sunt deleniti cupiditate, provident dolorum assumenda libero. Repellat.",
+            "bg":"linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%)"
+        },
+        
+        {
+            "img":"../images/monster01.png",
+            "title":"DON KINGKONG",
+            "desc":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit dicta aliquam, quaerat perspiciatis eum velit ratione impedit voluptatum illo dolores culpa consectetur sunt deleniti cupiditate, provident dolorum assumenda libero. Repellat.",
+            "bg":"linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%)"
+        },
+        {
+            "img":"../images/monster02.png",
+            "title":"KING BOO",
+            "desc":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit dicta aliquam, quaerat perspiciatis eum velit ratione impedit voluptatum illo dolores culpa consectetur sunt deleniti cupiditate, provident dolorum assumenda libero. Repellat.",
+            "bg":"linear-gradient( 99deg,  rgba(255,166,0,1) 14.7%, rgba(255,99,97,1) 73% )"
+        }
+    ]
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <link rel="stylesheet" href="css/bmi.css">
+</head>
+
+<body>
+    <div id="bmi">
+        <h1>BMI 계산기</h1>
+        <div class="contents">
+            <label><span>신장</span><input type="number" name="" id="myHeight" placeholder="신장(cm)"></label>
+            <label><span>체중</span><input type="number" name="" id="myWeight" placeholder="체중(kg)"></label>
+            <button class="btn calc">계산</button>
+            <button class="btn reset">초기화</button>
+        </div>
+        <div class="result">
+            나의 체질량 지수(BMI) <span class="num"></span><span class="txt"></span>
+        </div>
+    </div>
+    <script>
+        function average(kor, eng, math) {
+            return (kor + eng + math) / 3;
+        }
+        function seperation(num,cipher) {
+            return Math.round( num * Math.pow(10, cipher) ) / Math.pow(10, cipher);
+        }
+        $("#bmi .reset").on("click",function(){
+            $("#bmi .result .txt").text("");
+            $("#bmi .result .num").text("");
+            $("#myWeight").val("");
+            $("#myHeight").val("");
+        });
+        $("#bmi .calc").on("click", function () {
+            //console.log("사용자가 .calc 를 클릭했다. 난 이걸 on 메서드를 통해 잡아내고 있다.");
+            var myWeight = $("#myWeight").val().trim();
+            var myHeight = $("#myHeight").val().trim();
+            if( myHeight ==="" ) {
+                alert("키를 입력하세요.");
+                $("#myHeight").val("");
+                $("#myHeight").focus();
+            } else if(myWeight ==="") {
+                alert("몸무게를 입력하세요.");
+                $("#myWeight").val("");
+                $("#myWeight").focus();
+            } else {
+                var meterHeight = myHeight / 10;
+                var myBmi = myWeight / (meterHeight * meterHeight) * 100;
+                $("#bmi .result .num").text(   seperation(myBmi,4)   );
+                if (myBmi <= 18.5) {
+                    $("#bmi .result .txt").text("(저체중)");
+                } else if (myBmi <= 23) {
+                    $("#bmi .result .txt").text("(정상)");
+                } else if (myBmi <= 25) {
+                    $("#bmi .result .txt").text("(과체중)");
+                } else if (myBmi <= 30) {
+                    $("#bmi .result .txt").text("(비만)");
+                } else {
+                    $("#bmi .result .txt").text("(고도비만)");
+                }
+            }
+        });
+
+
+
+        //   methods, properties
+    </script>
+</body>
+
+</html>

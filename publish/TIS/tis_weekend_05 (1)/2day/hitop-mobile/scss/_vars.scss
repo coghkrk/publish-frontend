@@ -1,0 +1,47 @@
+$main-color:#bf0c14;
+$gray-color:#d9d9d9;
+
+@mixin gradient($startColor:rgba(214,79,23,1),$endColor:rgba(196,26,21,1),$deg:90deg) {
+    background: $startColor;
+    background: linear-gradient($deg, $startColor 0%, $endColor 100%);
+}
+
+@mixin transition($duration:0.25s) {
+    transition: all $duration ease;
+}
+@mixin center($position) {
+    position: absolute;
+    @if $position=="ver" {
+        top:50%;
+        transform: translateY(-50%);
+    }
+    @else if $position=="hor" {
+        left:50%;
+        transform: translateX(-50%);
+    }
+    @else if $position=="both" {
+        left:50%;
+        top:50%;
+        transform: translate(-50%,-50%);
+    }
+}
+
+@mixin ellipsis($line:1) {
+    @if $line==1 {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    @else {
+        overflow: hidden;
+        display: -webkit-box;
+        text-overflow: ellipsis;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: $line;
+        line-height: 1.5;
+        height: $line * 1.5em;
+    }
+}
+
+
+

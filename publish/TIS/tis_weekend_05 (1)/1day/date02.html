@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery-3.5.1.min.js"></script>
+</head>
+
+<body>
+    <h1 id="date"></h1>
+    <script>
+
+        var monthArray = ["JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"];
+        var dayArray = ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"];
+
+        function addZero(num) {
+            if( num < 10 ) {
+                return "0" + num;
+            } else {
+                return num;
+            }
+        }
+        function makeTime() {
+            var current = new Date();
+            var year = current.getFullYear();
+            var month = current.getMonth();
+            var date = current.getDate();
+            var day = current.getDay();
+            var hour = current.getHours();
+            var min = current.getMinutes();
+            var sec = current.getSeconds();
+          
+            $("#date").text(year+"/"+monthArray[month]+"/"+addZero(date)+"/"+dayArray[day]+"/"+addZero(hour)+"/"+addZero(min)+"/"+addZero(sec));
+        }
+        setInterval(makeTime,1000);
+        makeTime();
+    </script>
+</body>
+
+</html>

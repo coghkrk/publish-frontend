@@ -1,0 +1,246 @@
+{
+    "imgPath":"../images/",
+    "typo":[
+        {
+            "src":"01.jpg",
+            "title":"At President Trump’s behest,",
+            "desc":"In early February, Treasury Secretary Steven ",
+            "type":"paint",
+            "point":4.6,
+            "big":"01.jpg"
+        },
+        {
+            "src":"02.jpg",
+            "title":"At President Trump’s behest, the Treasury Secretary",
+            "desc":"In early February, Treasury Secretary Steven Mnuchin invited two Republican members of the Postal Service’s board of governors to his office to update him on a matter in which he had taken a particular interest — the search for a new postmaster general.",
+            "type":"paint",
+            "point":3.8,
+            "big":"02.jpg"
+        },
+        {
+            "src":"03.jpg",
+            "title":"At President Trump’s behest, the Treasury Secretary",
+            "desc":"In early February, Treasury Secretary Steven Mnuchin invited two Republican members of the Postal Service’s board of governors to his office to update him on a matter in which he had taken a particular interest — the search for a new postmaster general.",
+            "type":"photo",
+            "point":3.9,
+            "big":"03.jpg"
+        },
+        {
+            "src":"04.jpg",
+            "title":"At President Trump’s behest, the Treasury Secretary",
+            "desc":"In early February, Treasury Secretary Steven Mnuchin invited two Republican members of the Postal Service’s board of governors to his office to update him on a matter in which he had taken a particular interest — the search for a new postmaster general.",
+            "type":"paint",
+            "point":3.7,
+            "big":"04.jpg"
+        },
+        {
+            "src":"05.jpg",
+            "title":"At President Trump’s behest, the Treasury Secretary",
+            "desc":"In early February, Treasury Secretary Steven Mnuchin invited two Republican members of the Postal Service’s board of governors to his office to update him on a matter in which he had taken a particular interest — the search for a new postmaster general.",
+            "type":"paint",
+            "point":2.4,
+            "big":"05.jpg"
+        },
+        {
+            "src":"06.jpg",
+            "title":"At President Trump’s behest, the Treasury Secretary",
+            "desc":"In early February, Treasury Secretary Steven Mnuchin invited two Republican members of the Postal Service’s board of governors to his office to update him on a matter in which he had taken a particular interest — the search for a new postmaster general.",
+            "type":"paint",
+            "point":4.75,
+            "big":"06.jpg"
+        },
+        {
+            "src":"07.jpg",
+            "title":"At President Trump’s behest, the Treasury Secretary",
+            "desc":"In early February, Treasury Secretary Steven Mnuchin invited two Republican members of the Postal Service’s board of governors to his office to update him on a matter in which he had taken a particular interest — the search for a new postmaster general.",
+            "type":"photo",
+            "point":4.0,
+            "big":"07.jpg"
+        },
+        {
+            "src":"08.jpg",
+            "title":"At President Trump’s behest, the Treasury Secretary",
+            "desc":"In early February, Treasury Secretary Steven Mnuchin invited two Republican members of the Postal Service’s board of governors to his office to update him on a matter in which he had taken a particular interest — the search for a new postmaster general.",
+            "type":"paint",
+            "point":3.58,
+            "big":"08.jpg"
+        },
+        {
+            "src":"09.jpg",
+            "title":"At President Trump’s behest, the Treasury Secretary",
+            "desc":"In early February, Treasury Secretary Steven Mnuchin invited two Republican members of the Postal Service’s board of governors to his office to update him on a matter in which he had taken a particular interest — the search for a new postmaster general.",
+            "type":"photo",
+            "point":3.4,
+            "big":"09.jpg"
+        },
+        {
+            "src":"10.jpg",
+            "title":"At President Trump’s behest, the Treasury Secretary",
+            "desc":"In early February, Treasury Secretary Steven Mnuchin invited two Republican members of the Postal Service’s board of governors to his office to update him on a matter in which he had taken a particular interest — the search for a new postmaster general.",
+            "type":"paint",
+            "point":4.25,
+            "big":"10.jpg"
+        },
+        {
+            "src":"11.jpg",
+            "title":"At President Trump’s behest, the Treasury Secretary",
+            "desc":"In early February, Treasury Secretary Steven Mnuchin invited two Republican members of the Postal Service’s board of governors to his office to update him on a matter in which he had taken a particular interest — the search for a new postmaster general.",
+            "type":"photo",
+            "point":4.74,
+            "big":"11.jpg"
+        },
+        {
+            "src":"12.jpg",
+            "title":"At President Trump’s behest, the Treasury Secretary",
+            "desc":"In early February, Treasury Secretary Steven Mnuchin invited two Republican members of the Postal Service’s board of governors to his office to update him on a matter in which he had taken a particular interest — the search for a new postmaster general.",
+            "type":"paint",
+            "point":3.43,
+            "big":"12.jpg"
+        },
+        {
+            "src":"13.jpg",
+            "title":"At President Trump’s behest, the Treasury Secretary",
+            "desc":"In early February, Treasury Secretary Steven Mnuchin invited two Republican members of the Postal Service’s board of governors to his office to update him on a matter in which he had taken a particular interest — the search for a new postmaster general.",
+            "type":"photo",
+            "point":2.84,
+            "big":"13.jpg"
+        },
+        {
+            "src":"14.jpg",
+            "title":"At President Trump’s behest, the Treasury Secretary",
+            "desc":"In early February, Treasury Secretary Steven Mnuchin invited two Republican members of the Postal Service’s board of governors to his office to update him on a matter in which he had taken a particular interest — the search for a new postmaster general.",
+            "type":"paint",
+            "point":4.25,
+            "big":"14.jpg"
+        },
+        {
+            "src":"15.jpg",
+            "title":"At President Trump’s behest, the Treasury Secretary",
+            "desc":"In early February, Treasury Secretary Steven Mnuchin invited two Republican members of the Postal Service’s board of governors to his office to update him on a matter in which he had taken a particular interest — the search for a new postmaster general.",
+            "type":"paint",
+            "point":3.87,
+            "big":"15.jpg"
+        },
+        {
+            "src":"16.jpg",
+            "title":"At President Trump’s behest, the Treasury Secretary",
+            "desc":"In early February, Treasury Secretary Steven Mnuchin invited two Republican members of the Postal Service’s board of governors to his office to update him on a matter in which he had taken a particular interest — the search for a new postmaster general.",
+            "type":"sketch",
+            "point":4.0,
+            "big":"16.jpg"
+        },
+        {
+            "src":"17.jpg",
+            "title":"At President Trump’s behest, the Treasury Secretary",
+            "desc":"In early February, Treasury Secretary Steven Mnuchin invited two Republican members of the Postal Service’s board of governors to his office to update him on a matter in which he had taken a particular interest — the search for a new postmaster general.",
+            "type":"paint",
+            "point":3.2,
+            "big":"17.jpg"
+        },
+        {
+            "src":"18.jpg",
+            "title":"At President Trump’s behest, the Treasury Secretary",
+            "desc":"In early February, Treasury Secretary Steven Mnuchin invited two Republican members of the Postal Service’s board of governors to his office to update him on a matter in which he had taken a particular interest — the search for a new postmaster general.",
+            "type":"photo",
+            "point":3.1,
+            "big":"18.jpg"
+        },
+        {
+            "src":"19.jpg",
+            "title":"At President Trump’s behest, the Treasury Secretary",
+            "desc":"In early February, Treasury Secretary Steven Mnuchin invited two Republican members of the Postal Service’s board of governors to his office to update him on a matter in which he had taken a particular interest — the search for a new postmaster general.",
+            "type":"sketch",
+            "point":2.9,
+            "big":"19.jpg"
+        },
+        {
+            "src":"20.jpg",
+            "title":"At President Trump’s behest, the Treasury Secretary",
+            "desc":"In early February, Treasury Secretary Steven Mnuchin invited two Republican members of the Postal Service’s board of governors to his office to update him on a matter in which he had taken a particular interest — the search for a new postmaster general.",
+            "type":"paint",
+            "point":4.95,
+            "big":"20.jpg"
+        },
+        {
+            "src":"21.jpg",
+            "title":"At President Trump’s behest, the Treasury Secretary",
+            "desc":"In early February, Treasury Secretary Steven Mnuchin invited two Republican members of the Postal Service’s board of governors to his office to update him on a matter in which he had taken a particular interest — the search for a new postmaster general.",
+            "type":"paint",
+            "point":4.64,
+            "big":"21.jpg"
+        },
+        {
+            "src":"22.jpg",
+            "title":"At President Trump’s behest, the Treasury Secretary",
+            "desc":"In early February, Treasury Secretary Steven Mnuchin invited two Republican members of the Postal Service’s board of governors to his office to update him on a matter in which he had taken a particular interest — the search for a new postmaster general.",
+            "type":"paint",
+            "point":4.15,
+            "big":"22.jpg"
+        },
+        {
+            "src":"23.jpg",
+            "title":"At President Trump’s behest, the Treasury Secretary",
+            "desc":"In early February, Treasury Secretary Steven Mnuchin invited two Republican members of the Postal Service’s board of governors to his office to update him on a matter in which he had taken a particular interest — the search for a new postmaster general.",
+            "type":"sketch",
+            "point":3.6,
+            "big":"23.jpg"
+        },
+        {
+            "src":"24.jpg",
+            "title":"At President Trump’s behest, the Treasury Secretary",
+            "desc":"In early February, Treasury Secretary Steven Mnuchin invited two Republican members of the Postal Service’s board of governors to his office to update him on a matter in which he had taken a particular interest — the search for a new postmaster general.",
+            "type":"paint",
+            "point":3.1,
+            "big":"24.jpg"
+        },
+        {
+            "src":"25.jpg",
+            "title":"At President Trump’s behest, the Treasury Secretary",
+            "desc":"In early February, Treasury Secretary Steven Mnuchin invited two Republican members of the Postal Service’s board of governors to his office to update him on a matter in which he had taken a particular interest — the search for a new postmaster general.",
+            "type":"paint",
+            "point":2.5,
+            "big":"25.jpg"
+        },
+        {
+            "src":"26.jpg",
+            "title":"At President Trump’s behest, the Treasury Secretary",
+            "desc":"In early February, Treasury Secretary Steven Mnuchin invited two Republican members of the Postal Service’s board of governors to his office to update him on a matter in which he had taken a particular interest — the search for a new postmaster general.",
+            "type":"paint",
+            "point":4.75,
+            "big":"26.jpg"
+        },
+        {
+            "src":"27.jpg",
+            "title":"At President Trump’s behest, the Treasury Secretary",
+            "desc":"In early February, Treasury Secretary Steven Mnuchin invited two Republican members of the Postal Service’s board of governors to his office to update him on a matter in which he had taken a particular interest — the search for a new postmaster general.",
+            "type":"sketch",
+            "point":4.25,
+            "big":"27.jpg"
+        },
+        {
+            "src":"28.jpg",
+            "title":"At President Trump’s behest, the Treasury Secretary",
+            "desc":"In early February, Treasury Secretary Steven Mnuchin invited two Republican members of the Postal Service’s board of governors to his office to update him on a matter in which he had taken a particular interest — the search for a new postmaster general.",
+            "type":"paint",
+            "point":3.7,
+            "big":"28.jpg"
+        },
+        {
+            "src":"29.jpg",
+            "title":"At President Trump’s behest, the Treasury Secretary",
+            "desc":"In early February, Treasury Secretary Steven Mnuchin invited two Republican members of the Postal Service’s board of governors to his office to update him on a matter in which he had taken a particular interest — the search for a new postmaster general.",
+            "type":"paint",
+            "point":3.9,
+            "big":"29.jpg"
+        },
+        {
+            "src":"30.jpg",
+            "title":"At President Trump’s behest, the Treasury Secretary",
+            "desc":"In early February, Treasury Secretary Steven Mnuchin invited two Republican members of the Postal Service’s board of governors to his office to update him on a matter in which he had taken a particular interest — the search for a new postmaster general.",
+            "type":"sketch",
+            "point":4.2,
+            "big":"30.jpg"
+        }
+        
+    ]
+}

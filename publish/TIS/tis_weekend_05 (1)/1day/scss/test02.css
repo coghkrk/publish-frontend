@@ -1,0 +1,24 @@
+#main {
+  margin-top: 100px;
+}
+
+#main #gnb {
+  display: block;
+  text-align: center;
+}
+
+#main #gnb ul {
+  display: inline-block;
+}
+
+#main #gnb ul li {
+  float: left;
+}
+
+#main #gnb ul li a {
+  display: block;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 15px 40px;
+}
+/*# sourceMappingURL=test02.css.map */

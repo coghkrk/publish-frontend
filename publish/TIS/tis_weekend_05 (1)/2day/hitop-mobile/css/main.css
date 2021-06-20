@@ -1,0 +1,91 @@
+#mainVisual { height: 100vh; -webkit-perspective: 1000px; perspective: 1000px; }
+
+#mainVisual ul { width: 100vw; height: 100vh; }
+
+#mainVisual ul li { height: 100%; background-repeat: no-repeat; background-position: 50%; background-size: cover; }
+
+#mainVisual ul li#visual01 { background-image: url("../images/main/mainVisual01.jpg"); }
+
+#mainVisual ul li#visual02 { background-image: url("../images/main/mainVisual02.jpg"); }
+
+#mainVisual ul li#visual03 { background-image: url("../images/main/mainVisual03.jpg"); }
+
+#mainVisual .slogan { width: 100%; padding: 0 50px; color: #fff; text-align: center; z-index: 2; word-break: keep-all; position: absolute; left: 50%; top: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); }
+
+#mainVisual .slogan .main { margin-bottom: 30px; font-size: 2.4rem; font-weight: 700; line-height: 1.2; }
+
+#mainVisual .slogan .sub { font-size: 1.2rem; }
+
+#mainVisual .slogan .sub br { display: none; content: ''; }
+
+#mainVisual .btn { width: 40px; height: 40px; position: absolute; top: 50%; font-size: 2rem; color: #fff; line-height: 40px; background-color: rgba(0, 0, 0, 0.5); z-index: 3; }
+
+#mainVisual .btn.btnPrev { left: 0; }
+
+#mainVisual .btn.btnNext { right: 0; }
+
+#mainVisual .pagination { width: 100%; position: absolute; bottom: 100px; text-align: center; z-index: 2; }
+
+#mainVisual .pagination .swiper-pagination-bullet { width: 12px; height: 12px; -webkit-transition: all 0.25s; transition: all 0.25s; opacity: 1; background-color: transparent; border: 2px solid #fff; outline: none; border-radius: 1000px; }
+
+#mainVisual .pagination .swiper-pagination-bullet-active { width: 60px; background-color: #fff; }
+
+#mainMenu { overflow: hidden; padding: 20px; }
+
+#mainMenu li { width: 90%; position: relative; }
+
+#mainMenu li:before { display: block; position: absolute; top: 15px; right: 15px; bottom: 15px; left: 15px; content: ''; border: 1px solid #fff; }
+
+#mainMenu li .txtBox { position: absolute; bottom: 30px; left: 30px; color: #fff; }
+
+#mainMenu li .txtBox .main { font-size: 2.4rem; font-weight: 700; line-height: 1.2; text-transform: uppercase; }
+
+#mainMenu li .txtBox .sub { font-size: 1.4rem; }
+
+#mainMenu li img { width: 100%; }
+
+.section { padding: 50px 0; }
+
+.section .titleBox { margin-bottom: 20px; text-align: center; }
+
+.section .titleBox h2 { font-size: 2.4rem; font-weight: 700; text-transform: uppercase; }
+
+.section .titleBox p { font-size: 1.2rem; word-break: keep-all; }
+
+#business { background-color: #d9d9d9; }
+
+#business ul li { position: relative; margin-top: 20px; }
+
+#business ul li:nth-child(1) { margin-top: 0; }
+
+#business ul li img { width: 100%; }
+
+#business ul li .txtBox { width: 90%; position: absolute; bottom: 10px; left: 10px; font-size: 1.4rem; color: #fff; }
+
+#business ul li .txtBox .main { font-size: 1.8rem; font-weight: 700; }
+
+#news { overflow: hidden; }
+
+#news ul li { width: 80%; border: 1px solid #d9d9d9; }
+
+#news ul li img { width: 100%; position: absolute; top: 0; left: 0; }
+
+#news ul li .imgBox { position: relative; }
+
+#news ul li .imgBox:before { display: block; padding-top: 100%; content: ''; }
+
+#news ul li .txtBox { padding: 20px; font-size: 1.2rem; }
+
+#news ul li .txtBox .main { margin-bottom: 20px; font-size: 1.6rem; overflow: hidden; display: -webkit-box; text-overflow: ellipsis; -webkit-box-orient: vertical; -webkit-line-clamp: 2; line-height: 1.5; height: 3em; }
+
+#news ul li .txtBox .sub { overflow: hidden; display: -webkit-box; text-overflow: ellipsis; -webkit-box-orient: vertical; -webkit-line-clamp: 2; line-height: 1.5; height: 3em; }
+
+#news ul li .txtBox .date { margin-top: 20px; color: #d9d9d9; }
+
+#customer { color: #fff; background: url("../images/main/bgCustomer.jpg") no-repeat 50% fixed; background-size: cover; }
+
+#customer h2:after { content: ''; display: block; width: 50px; height: 1px; margin: 25px auto; background-color: #fff; }
+
+#customer .btns { text-align: center; }
+
+#customer .btns .btn { display: inline-block; width: 180px; height: 50px; line-height: 50px; color: #fff; background: #d64f17; background: -webkit-gradient(linear, left top, right top, from(#d64f17), to(#c41a15)); background: linear-gradient(90deg, #d64f17 0%, #c41a15 100%); }

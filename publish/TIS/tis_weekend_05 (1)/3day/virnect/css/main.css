@@ -1,0 +1,242 @@
+#mainVisual {
+    height: 100vh;
+    width:100%;
+    overflow: hidden;
+    position: fixed;
+    top:0;
+}
+#mainVisual video {
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#mainVisual .txtBox {
+    position: absolute;
+    top:50%;
+    left:100px;
+    transform: translateY(-50%);
+    color:#fff;
+    z-index: 9;
+}
+#mainVisual .txtBox .main {
+    font-size: 48px;
+    font-weight: 100;
+    margin-bottom: 30px;
+}
+#mainVisual .txtBox .main strong {
+    font-weight: 700;
+    display: block;
+}
+.btnMore {
+    border: 1px solid #fff;
+    display: inline-block;
+    padding:15px 80px 15px 30px;
+    background:url("../images/arrow.png") no-repeat right 30px top 50%;
+    transition: 0.25s ease;
+    margin-top: 50px;
+}
+.btnMore:hover {
+    background-color: #6700ff;
+    background-position: right 15px top 50%;
+    border-color: #6700ff;
+}
+
+#quickMenu {
+    position: relative;
+    z-index: 2;
+    margin-top: 100vh;
+}
+#quickMenu .fList li {
+    width:25%;
+    color:#fff;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+#quickMenu .fList li:hover img {
+    transform: scale(1.25);
+}
+#quickMenu .fList li img {
+    width:100%;
+    transition: 0.25s ease;
+}
+#quickMenu .fList li .txtBox {
+    position: absolute;
+    width:100%;
+    top:50%;
+    transform: translateY(-50%);
+}
+#quickMenu .fList li .txtBox .main {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+/* product */
+#product {
+    position: relative;
+    z-index: 1;
+    background-color: #171717;
+    overflow: hidden;
+}
+#product video {
+    position: absolute;
+    left:0;
+    top:0;
+    width:100%;
+    height: auto;
+    object-fit: cover;
+    z-index: -1;
+}
+#product .txtBox {
+    text-align: center;
+    color:#fff;
+    padding:300px 0;
+}
+#product .list {
+    max-width:1920px;
+    margin: auto;
+}
+#product .list .contentsWrap {
+    width:1200px;
+    padding:60px 0;
+    position: relative;
+}
+#product .list .contentsWrap img {
+    width:100%;
+}
+#product .list .contentsWrap .contentsBox {
+    position: absolute;
+    width:420px;
+    height: 60%;
+    top:20%;
+    color:#fff;
+    padding:100px 40px 40px;
+    background-color: #000;
+    word-break: keep-all;
+}
+#product .list li:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+#product .list li:nth-child(2n+1) .contentsWrap {
+    float: right;
+}
+#product .list li:nth-child(2n) .contentsWrap {
+    float: left;
+}
+
+#product .list li:nth-child(odd) .contentsWrap .contentsBox {
+    left:0;
+    margin-left: -300px;
+}
+#product .list li:nth-child(even) .contentsWrap .contentsBox {
+    right:0;
+    margin-right: -300px;
+    
+}
+#product .list li .contentsWrap .contentsBox a {
+    border: 1px solid #6700ff;
+}
+#product .list .contentsWrap .contentsBox .no {
+    font-size: 120px;
+    font-weight: 900;
+    color:rgba(255,255,255,0.8);
+    position: absolute;
+    top:0;
+    transform: translateY(-50%);
+}
+#product .list .contentsWrap .contentsBox h3 strong {
+    display: block;
+    font-size: 48px;
+    word-break: keep-all;
+    font-weight: 700;
+}
+
+
+/*  */
+#consulting {
+    position: relative;
+    text-align: center;
+    color:#fff;
+    background: url("../images/bg_consulting.png") fixed;
+    background-attachment: fixed;
+    background-size: cover;
+}
+#consulting {
+    padding-bottom: 200px;
+}
+#consulting .txtBox{
+    padding:300px 0 100px;
+}
+
+#consulting .process {
+    text-align: center;
+    font-size: 0;
+}
+#consulting .process ul {
+    display: inline-block;
+    padding:30px;
+    background-color: rgba(255,255,255,0.3);
+    border-radius: 300px;
+    margin: 0 50px;
+    position: relative;
+}
+#consulting .process ul:before {
+    content: '';
+    display: block;
+    width:50px;
+    height: 1px;
+    background: rgba(255,255,255,0.3);
+    position: absolute;
+    top:50%;
+    left:-50px;
+}
+#consulting .process ul:after {
+    content: '';
+    display: block;
+    width:50px;
+    height: 1px;
+    background: rgba(255,255,255,0.3);
+    position: absolute;
+    top:50%;
+    right:-50px;
+}
+
+#consulting .process ul .item {
+    margin-left: -30px;
+}
+#consulting .process ul .item:nth-child(1) {
+    margin-left: 0;
+}
+#consulting .process ul .item:nth-child(4) {
+    margin-left: 50px;
+}
+
+#consulting .process .item {
+    font-size: 18px;
+    border-radius: 500px;;
+    display: inline-block;
+    width:180px;
+    height: 180px;
+    line-height: 180px;
+    background-color: rgb(33, 53, 231);
+    color:#fff;
+}
+#consulting .btnMore {border-color: #6700ff;}
+
+.section .txtBox h2 {
+    font-size: 22px;
+}
+.section .txtBox .main {
+    font-size: 56px;
+    font-weight: 700;
+    margin: 30px 0;
+}
+.section .txtBox .sub {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}

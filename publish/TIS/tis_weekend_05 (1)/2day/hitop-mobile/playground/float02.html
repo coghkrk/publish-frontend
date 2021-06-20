@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float layout</title>
+    <style>
+        * {
+            margin:0;
+            padding:0;
+        }
+        .container {
+            width:1200px;
+            border:1px solid #f00;
+        }
+        .box {
+            width:398px;
+            height: 400px;
+            border:1px solid #000;
+            float:left;
+        }
+        .txt {
+            width:1200px;
+            border:1px solid #00f;
+            margin-top:100px;
+        }
+        .clearFix:after {
+            content:"";
+            display:block;
+            clear:both;
+        }
+        .list li {
+            width:300px;
+            height: 300px;
+            float: left;
+            border: 1px solid #000;
+        }
+    </style>
+</head>
+<body>
+    <div class="container clearFix">
+        <div class="box">AAA</div>
+        <div class="box">BBB</div>
+        <div class="box">CCC</div>
+    </div>
+    <div class="txt">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia sit quo ea eius, aperiam quis. Possimus reiciendis error cupiditate explicabo voluptate eveniet fugiat soluta eaque, assumenda labore animi vero aliquam?
+    </div>
+
+    <ul class="list clearFix">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+    <div>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor eos nam repudiandae pariatur ut? Consequatur accusantium hic totam? Sapiente libero unde blanditiis odio tempora laudantium, eius inventore illum quidem veritatis vel voluptates dolorum consequuntur voluptatem iste? Vitae odio vero, officiis, velit repellendus sequi, saepe error voluptate at architecto aliquid nam!
+    </div>
+</body>
+</html>

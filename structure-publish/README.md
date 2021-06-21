@@ -16,13 +16,13 @@
     * Mobile : 360px - 767px
     * Tablet : 768px - 1023px
     * Desktop : 1024px - 1920px (소형 : 1069px)
-* 에디터 : Webstorm  
+<!-- * 에디터 : Webstorm  
     * [codespace 세팅]
     * preferences > Editor > Code style
     * HTML > Tabs and Indents > Tab Size
         * Tab Size : 2
         * Indent : 2
-        * Continuation Indent : 4
+        * Continuation Indent : 4 -->
   &nbsp;
   &nbsp;  
   &nbsp;  

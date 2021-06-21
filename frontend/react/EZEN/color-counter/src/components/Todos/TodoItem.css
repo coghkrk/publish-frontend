@@ -1,0 +1,8 @@
+p {
+    cursor: pointer;
+}
+.on {
+    text-decoration: line-through;
+    color: cornflowerblue;
+    font-weight: 600;
+}

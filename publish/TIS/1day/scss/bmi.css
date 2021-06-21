@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#bmi {
+  width: 600px;
+  margin: 100px auto;
+  padding: 80px 0;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  border-radius: 10px;
+  -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+          box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+#bmi h1 {
+  font-size: 24px;
+  text-align: center;
+  -webkit-transform: translateY(-100px);
+          transform: translateY(-100px);
+  background-color: #fff;
+  display: inline-block;
+  padding: 0 20px;
+}
+
+#bmi .contents {
+  text-align: center;
+}
+
+#bmi .contents label {
+  display: inline-block;
+}
+
+#bmi .contents label input {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 40px;
+  border: 1px solid #ccc;
+  padding: 0 10px;
+  width: 80px;
+  border-radius: 5px;
+}
+
+#bmi .contents .btn {
+  width: 80px;
+  height: 40px;
+  border: none;
+  background: none;
+  outline: none;
+  line-height: 40px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+#bmi .contents .btn.calc {
+  background-color: #000;
+  color: #fff;
+  border: 1px solid #000;
+}
+
+#bmi .contents .btn.reset {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #ccc;
+}
+
+#bmi .result {
+  margin-top: 20px;
+  text-align: center;
+}
+
+#bmi .result .num {
+  font-weight: bold;
+  display: inline-block;
+}
+
+#bmi .result .txt {
+  font-weight: bold;
+  display: inline-block;
+  margin-left: 10px;
+  color: #f00;
+}
+/*# sourceMappingURL=bmi.css.map */

@@ -1,0 +1,75 @@
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+  /* Support for IE. */
+  -webkit-font-feature-settings: 'liga';
+          font-feature-settings: 'liga';
+}
+
+.searchWrap {
+  text-align: center;
+  margin: 100px 0;
+}
+
+.searchWrap .searchBox {
+  padding: 10px 30px;
+  border: 1px solid #d9d9d9;
+  border-radius: 100px;
+  display: inline-block;
+}
+
+.searchWrap .searchBox input {
+  width: 500px;
+  height: 40px;
+  border: none;
+  outline: none;
+  font-size: 18px;
+}
+
+.searchWrap .searchBox button {
+  outline: none;
+  border: none;
+  background: none;
+  height: 40px;
+  width: 40px;
+  position: relative;
+  font-size: 24px;
+  top: 5px;
+}
+
+.loadData {
+  width: 1400px;
+  margin: 100px auto;
+}
+
+.loadData .list:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.loadData li {
+  float: left;
+  margin: 5px;
+}
+
+.loadData li img {
+  vertical-align: top;
+}
+/*# sourceMappingURL=layout.css.map */

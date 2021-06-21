@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        make();
+        function make (){
+            console.log('test1');
+        }
+        */
+       //function 함수는 호출 -> 선언이 가능함
+       
+       const make = () => {
+           console.log('test');
+       }
+       make();
+       //화살표 함수는 선언 -> 호출 해야함 호출 -> 선언이 불가능
+
+       const make1 = name => {
+           console.log(`나의 이름은 ${name}`);
+       }
+       make1 ('홍길동');
+
+       const sum = (num1 , num2 , num3) => {
+           let hap = num1 + num2 + num3
+           console.log('합:' + hap);
+           console.log(`합:${hap}`);
+       }
+
+       sum(10 , 20 , 30)
+
+       const make2 = () => console.log('민경민 바보');
+       make2();
+
+    </script>
+</body>
+</html>

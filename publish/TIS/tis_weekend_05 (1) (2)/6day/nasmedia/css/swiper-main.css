@@ -1,0 +1,18 @@
+@charset "UTF-8";
+body { font-family: "Montserrat" , "Noto Sans KR" ,"sans-serif","돋움"; font-size: 1.6rem; color: #080a14; }
+
+#main { overflow: hidden; height: 100vh; background-color: #111; }
+
+#main .section .inner { background-color: #165de2; }
+
+#main .section:nth-child(2n) .inner { background-color: #be2222; }
+
+#main .section .inner { height: 100vh; position: relative; }
+
+#main .section .inner h2 { font-weight: 700; text-align: center; color: #fff; position: absolute; top: 50%; width: 100%; font-size: 64px; }
+
+.pagination { position: absolute; right: 50px; top: 50%; -webkit-transform: translateY(-50%); transform: translateY(-50%); z-index: 3; }
+
+.pagination .swiper-pagination-bullet { width: 20px; height: 20px; opacity: 1; background: none; border: 3px solid #fff; margin: 0 5px; border-radius: 100px; display: block; margin: 10px 0; -webkit-transition: all 0.25s ease; transition: all 0.25s ease; }
+
+.pagination .swiper-pagination-bullet-active { background-color: #fff; }

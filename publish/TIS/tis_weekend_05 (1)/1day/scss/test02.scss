@@ -1,0 +1,20 @@
+#main {
+    margin-top: 100px;
+    #gnb {
+        display: block;
+        text-align: center;
+        ul {
+            display: inline-block;
+            li {
+                float: left;
+                a {
+                    
+                    padding:15px 40px;
+                    font-size: 18px;
+                    font-weight: 700;
+                    display: block;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,41 @@
+.Test5{
+    border:1px solid #ccc;
+    padding:20px;
+    margin:30px;
+}
+.Test5 .box1 {
+    background-color:pink;
+    line-height: 3;
+    font-size: 20px;
+    margin-bottom: 30px;
+    color:#fff;
+    padding:25px;
+    text-align: center;
+}
+.Test5 .box2 {
+    background-color: red;
+    line-height: 3;
+    font-size: 20px;
+    margin-bottom: 30px;
+    color: #fff;
+    padding:25px;
+    text-align: center;
+}
+.Test5 .box3 {
+    background-color:blue;
+    line-height: 3;
+    font-size: 20px;
+    margin-bottom: 30px;
+    color: #fff;
+    padding:25px;
+    text-align: center;
+}
+.Test5 .box4 {
+    background-color: green;
+    line-height: 3;
+    font-size: 20px;
+    margin-bottom: 30px;
+    color: #fff;
+    padding:25px;
+    text-align: center;
+}

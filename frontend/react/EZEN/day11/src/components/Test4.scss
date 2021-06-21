@@ -1,0 +1,23 @@
+.Test4 {
+    width: 450px;
+    border: 1px solid #ddd;
+    padding: 20px 30px;
+    h3 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    ul {
+        li {
+            line-height: 25px;
+            a {
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+            span {
+                float: right;
+            }
+        }
+    }
+
+}

@@ -1,0 +1,432 @@
+#mainVisual {
+    height: 100vh;
+    position: relative;
+    color: #fff;
+}
+
+#mainVisual .mask {
+    overflow: hidden;
+}
+
+#mainVisual .visualList li .img {
+    height: 100vh;
+    text-indent: -9999px;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+/* #mainVisual .visualList li:nth-child(1) {background-image: url("../images/main/main_visual_01.jpg");}
+#mainVisual .visualList li:nth-child(2) {background-image: url("../images/main/main_visual_02.jpg");}
+#mainVisual .visualList li:nth-child(3) {background-image: url("../images/main/main_visual_03.jpg");} */
+
+#mainVisual .visualList .visual01 .img {
+    background-image: url("../images/main/main_visual_01.jpg");
+}
+
+#mainVisual .visualList .visual02 .img {
+    background-image: url("../images/main/main_visual_02.jpg");
+}
+
+#mainVisual .visualList .visual03 .img {
+    background-image: url("../images/main/main_visual_03.jpg");
+}
+
+
+#mainVisual .visualList li .img {
+    transform:scale(1.1) rotate(0.002deg);
+    transition: all 3s ease-in-out 0.5s;
+}
+
+#mainVisual .visualList li.swiper-slide-active .img {
+    transform:scale(1) rotate(0.002deg);
+}
+
+#mainVisual button {
+    padding: 0;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+#mainVisual .btnPrev {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: 3;
+}
+
+#mainVisual .btnNext {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    z-index: 3;
+}
+
+/* 
+inline-block 처리 기법을 쓸 때 
+주로 자식의 넓이가 가변적일때 즉 넓이를 따로 지정을 할 수 없을때 inline-block 기법을 쓴다.
+
+*/
+#mainVisual .slogan {
+    position: absolute;
+    width:100%;
+    top:40%;
+    color:#fff;
+    text-align: center;
+    z-index: 2;
+}
+#mainVisual .slogan .main {
+    font-size: 64px;
+    font-weight: 700;
+    text-shadow: 5px 5px 5px rgba(0,0,0,0.1);
+}
+#mainVisual .slogan .sub {
+    font-size: 24px;
+}
+
+#mainVisual .pagination {
+    width: 100%;
+    position: absolute;
+    bottom: 250px;
+    z-index: 2;
+    text-align: center;
+}
+
+#mainVisual .pagination .auto i {
+    font-size: 30px;
+    color: #fff;
+}
+
+#mainVisual .pagination .auto .btnAuto {
+    display: none;
+}
+
+
+#mainVisual .pagination .btns .swiper-pagination-bullet {
+    width:24px;
+    height: 24px;
+    background-color: transparent;
+    border: 3px solid #fff;
+    box-sizing: border-box;
+    opacity: 1;
+    margin: 0 4px;
+    border-radius: 100px;
+    /* transform: skewX(-10deg); */
+    transition: all 0.25s ease;
+    outline: none;
+}
+
+#mainVisual .pagination .btns .swiper-pagination-bullet-active {
+    background-color: #fff;
+    width:80px;
+}
+
+/* mainMenu */
+#mainMenu {
+    position: relative;
+    z-index: 3;
+    margin: -70px auto 70px;
+}
+
+#mainMenu li {
+    position: relative;
+    color: #fff;
+    float: left;
+    overflow: hidden;
+}
+
+#mainMenu li:nth-child(2) {
+    margin-top: -100px;
+}
+
+#mainMenu li .txt {
+    position: absolute;
+    bottom: 60px;
+    left: 45px;
+    z-index: 2;
+}
+
+#mainMenu li .txt p {
+    font-size: 18px;
+}
+
+#mainMenu li .txt h2 {
+    margin-top: 30px;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+#mainMenu li .bg {
+    transition: all 0.2s;
+}
+
+#mainMenu li:after {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    bottom: 20px;
+    left: 20px;
+    content: "";
+    border: 1px solid #f00;
+    opacity: 0;
+    transition: all 0.2s;
+}
+
+#mainMenu li:hover:after {
+    opacity: 1;
+}
+
+#mainMenu li:hover .bg {
+    transform: scale(1.2);
+}
+
+
+#business {
+    padding: 100px 0;
+    background-image: url("../images/main/bg_business.jpg");
+    background-color: #d9d9d9;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.container {
+    width: 1200px;
+    margin: auto;
+}
+
+.titleBox {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.titleBox h2 {
+    margin-bottom: 20px;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.titleBox p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+#business .container li {
+    position: relative;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    color: #fff;
+    float: left;
+}
+
+#business .container li:nth-child(2n+1) {
+    margin-left: 0;
+}
+
+#business .container li .txt {
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+}
+
+#business .container li .txt h3 {
+    margin-bottom: 10px;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+#business .container li .txt p {
+    font-size: 18px;
+}
+
+#news {
+    padding: 100px 0;
+}
+
+#news .container {
+    position: relative;
+}
+
+#news ul li {
+    width: 330px;
+    float: left;
+    border: 1px solid #d9d9d9;
+    box-sizing: border-box;
+    transition: all 0.2s;
+    opacity: 0.5;
+}
+
+#news ul li.swiper-slide-active {
+    opacity: 1;
+}
+
+#news ul li:hover {
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    transform: translateY(-10px);
+    border-color: #f00;
+}
+
+#news ul li img {
+    width: 100%;
+}
+
+#news ul li:nth-child(1) {
+    margin-left: 0;
+}
+
+#news ul li .txtBox {
+    padding: 30px;
+}
+
+#news ul li .txtBox h3 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+#news ul li .txtBox .txt {
+    display: -webkit-box;
+    height: 4.5em;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    overflow: hidden;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+#news .mask {
+    padding: 20px 0;
+    overflow: hidden;
+}
+
+
+#news .sample {
+    position: absolute;
+    width:400px;
+}
+#news .sample li {
+    width:400px;
+    padding:40px;
+    background-color: rgba(0,0,0,0.8);
+    color:#fff;
+}
+#news .sample .main {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+#news .sample .sub {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+
+
+#news .pagination {
+    text-align: right;
+    font-size: 20px;
+}
+#news .pagination .swiper-pagination-current {
+    font-size: 36px;
+    font-weight: 700;
+}
+#news button {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 50%;
+    z-index: 2;
+    font-size: 36px;
+    color: #fff;
+    line-height: 80px;
+    border-radius: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    outline: none;
+    border: none;
+    text-align: center;
+}
+
+#news .btnPrev {
+    left: -40px;
+}
+
+#news .btnNext {
+    right: -40px;
+}
+
+
+
+#customer {
+    padding: 100px 0;
+    background-image: url("../images/main/bg_customer.jpg");
+    background-position: 50% 50%;
+    text-align: center;
+}
+
+#customer .titleBox {
+    color: #fff;
+}
+
+#customer .btnEstimate {
+    display: inline-block;
+    padding: 20px 60px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    background-image: linear-gradient(45deg, #faa14d, #c31714);
+    border-radius: 100px;
+}
+
+#location {
+    padding-top: 100px;
+}
+
+.customoverlay {
+    position: relative;
+    bottom: 85px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    border-bottom: 2px solid #ddd;
+    float: left;
+}
+
+.customoverlay:nth-of-type(n) {
+    border: 0;
+    box-shadow: 0px 1px 2px #888;
+}
+
+.customoverlay a {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    color: #000;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 6px;
+    overflow: hidden;
+    background: #d95050;
+    background: #d95050 url("../images/main/arrow_white.png") no-repeat right 14px center;
+}
+
+.customoverlay .title {
+    display: block;
+    margin-right: 35px;
+    padding: 10px 15px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    background: #fff;
+}
+
+.customoverlay:after {
+    width: 22px;
+    height: 12px;
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    margin-left: -12px;
+    content: '';
+    background: url("../images/main/vertex_white.png");
+}

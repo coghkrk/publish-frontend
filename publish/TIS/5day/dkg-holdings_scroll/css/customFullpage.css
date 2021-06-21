@@ -1,0 +1,102 @@
+#fp-nav ul li {
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin: 15px;
+    position:relative;
+}
+#fp-nav ul li a {
+    opacity: 0.5;
+    transition:all 0.25s;
+}
+#fp-nav ul li a.active {
+    opacity: 1;
+}
+#fp-nav ul li a:after {
+    content: '';
+    display: block;
+    width:180px;
+    height: 30px;
+    position: absolute;
+    right:0;
+    top:0;
+}
+#fp-nav ul li a span {
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+    height: 4px;
+    width: 4px;
+    border: 0;
+    background: #fff;
+    left: 50%;
+    top: 50%;
+    margin: -2px 0 0 -2px;
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+}
+
+#fp-nav ul li a:before {
+    content: '';
+    display: block;
+    width:30px;
+    height: 30px;
+    border: 2px solid #fff;
+    border-radius: 100%;
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%) scale(0);
+    transition: all 0.25s ease-in-out;
+}
+
+#fp-nav ul li a.active:before {
+    transform:translate(-50%,-50%) scale(1);
+}
+
+
+#fp-nav ul li .fp-tooltip {
+    position: absolute;
+    top: 50%;
+    transform:translateY(-50%);
+    color: #fff;
+    font-size: 14px;
+    font-family: "Noto Sans KR";
+    white-space: nowrap;
+    max-width: 220px;
+    overflow: hidden;
+    display: block;
+    opacity: 0.5;
+    width: 140px;
+    text-align: left;
+    cursor: pointer;
+    transition:all 0.25s;
+}
+
+
+
+#fp-nav ul li:hover .fp-tooltip,
+#fp-nav.fp-show-active a.active + .fp-tooltip {
+    width: 140px;
+    opacity: 1;
+}
+
+#fp-nav ul li:hover a span{
+    width: 4px;
+    height: 4px;
+    margin: -2px 0px 0px -2px;
+}
+
+#fp-nav ul li a.active span,
+#fp-nav ul li:hover a.active span{
+    height: 4px;
+    width: 4px;
+    margin: -2px 0 0 -2px;
+    border-radius: 100%;
+ }
+
+ #fp-nav ul li:last-child {
+     display: none;
+ }

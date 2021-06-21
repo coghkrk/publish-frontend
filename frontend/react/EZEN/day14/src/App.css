@@ -1,0 +1,26 @@
+.App {}
+.App nav {
+  height: 120px;
+}
+.App ul {
+  display: flex;
+  flex-wrap: wrap;
+  height: inherit;
+  margin-top: 50px;
+}
+.App ul li {
+  margin-right: 20px;
+  list-style: none;
+}
+.App ul li a {
+  text-decoration: none;
+  color: #333;
+  background-color: cornflowerblue;
+  border: 2px solid chocolate;
+  padding: 10px 20px;
+  color: #f0f0f0;
+  font-weight: bold;
+}
+.App ul li a:hover {
+  opacity: .7;
+}

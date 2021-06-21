@@ -1,0 +1,220 @@
+@media all and (max-width:1280px) {
+    #main {
+        #mainVisual {
+            .slogan {
+                left:100px;
+                h2 {
+                    font-size: 7rem;
+                }
+            }
+        }
+        #introduce {
+            .titleBox{
+                h2 {
+                    font-size: 4.8rem;
+                }
+            }
+            ul {
+                li {
+                    padding:25px 0;
+                    h3 {
+                        width:120px;
+                        font-size: 2rem;
+                    }
+                }
+            }
+        }
+        #ad {
+            .list {
+                > li {
+                    > a {
+                        padding: 20px 30px;
+                        font-size: 2.4rem;
+                    }
+                    ul {
+                        text-align: left;
+                        li {
+                            a {
+                                padding:10px 0 10px 30px;
+                                font-size: 1.6rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        #insight {
+            .contents {
+                position: static;
+                transform: none;
+                padding-top: 200px;
+                .img {
+                    width:50%;
+                    padding-right: 20px;
+                    img {
+                        width:100%;
+                    }
+                }
+                .txt {
+                    padding: 0 40px;
+                    width:50%;
+                    h2 {
+                        strong {
+                            font-size: 2.4rem;
+                        }
+                    }
+                    .links {
+                        margin-top: 60px;
+                        .btnIntroduce {
+                            float: none;
+                            margin-right: 0;
+                            padding-bottom: 30px;
+                            margin-bottom: 30px;
+                            border-bottom: 1px solid #d9d9d9;
+                            &:last-child {
+                                border-bottom: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+@media all and (max-width:960px) {
+    #main {
+        #mainVisual {
+            .slogan {
+                left:50px;
+                h2 {
+                    font-size: 5rem;
+                    padding-right: 100px;
+                }
+            }
+        }
+        #introduce {
+            .inner {
+                padding-top: 150px;
+            }
+            .titleBox{
+                float: none;
+                margin-bottom: 50px;
+                h2 {
+                    font-size: 4.8rem;
+                }
+                .btnIntroduce {
+                    margin-top: 40px;
+                    margin-left: 20px;
+                }
+            }
+            ul {
+                float: none;
+                li {
+                    padding:25px 0;
+                    h3 {
+                        float: none;
+                        width:auto;
+                        font-size: 2rem;
+                    }
+                    p {
+                        float: none;
+                    }
+                }
+            }
+        }
+        #ad {
+            .list {
+                > li {
+                    width:40%;
+                    margin-bottom: 30px;
+                    > a {
+                        padding: 20px 0 20px 30px;
+                        font-size: 2.4rem;
+                        text-align: left;
+                    }
+                    ul {
+                        text-align: left;
+                        li {
+                            a {
+                                padding:10px 0 10px 30px;
+                                font-size: 1.6rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+}
+@media all and (max-width:640px) {
+    #main {
+        #ad {
+            .list {
+                position: static;
+                transform: translate(0,0);
+                margin-top: 100px;
+                > li {
+                    width:100%;
+                    border-bottom: 1px solid rgba(255,255,255,0.2);
+                    padding-bottom: 10px;
+                    margin-bottom: 10px;
+                    &:last-child {
+                        border: none;
+                        padding-bottom: 0;
+                        margin-bottom: 0;
+                    }
+                    > a {
+                        padding: 10px 0;
+                        font-size: 1.8rem;
+                        margin-bottom: 0;
+                    }
+                    ul {
+                        li {
+                            a {
+                                padding:5px 0;
+                                font-size: 1.4rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        #insight {
+            .container {
+                padding: 0;
+            }
+            .contents {
+                padding-top: 0;
+                display: block;
+                .img {
+                    overflow: hidden;
+                    &:before {
+                        content: '';
+                        display: block;
+                        padding-top: 50%;
+                    }
+                    position: relative;
+                    width:100%;
+                    padding-right: 0;
+                    display: block;
+                    img {
+                        position: absolute;
+                        left:0;
+                        top:-30%;
+                    }
+                }
+                .txt {
+                    padding: 50px;
+                    width:100%;
+                    display: block;
+                }
+            }
+        }
+    }
+}
+@media all and (max-width:480px) {
+
+}
+

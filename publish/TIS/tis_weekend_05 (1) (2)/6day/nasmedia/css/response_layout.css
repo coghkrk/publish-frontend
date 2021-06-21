@@ -1,0 +1,11 @@
+@media all and (max-width: 1280px) { .container { width: 100%; padding: 0 50px; }
+  #header #gnb { display: none; }
+  #header .language { display: none; }
+  #header .allMenu .list > li > a { padding: 25px 30px; font-size: 3rem; } }
+
+@media all and (max-width: 960px) { #header #logo { left: 50px; top: 30px; }
+  #header .btnAll { right: 50px; top: 30px; }
+  #header .allMenu .list > li { display: block; }
+  #header .allMenu .list > li ul { display: none; } }
+
+@media all and (max-width: 768px) { .pagination { display: none; } }

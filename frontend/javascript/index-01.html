@@ -27,6 +27,8 @@
         }
     </style>
     <script>
+        let human;
+        let h1;
 
         let cursor_item;
         let x = 0;
@@ -36,7 +38,7 @@
         let speed = 0.03;
 
         window.onload = function() {
-            let h1 = document.getElementsByTagName("h1")[0];
+            h1 = document.getElementsByTagName("h1")[0];
             cursor_item = document.getElementsByClassName("cursor-item")[0];
             window.addEventListener("click", mouseFunc, false);
 

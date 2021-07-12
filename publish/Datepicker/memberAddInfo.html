@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="ko" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8">
+<title>회원 추가정보 입력</title>
+<link rel="stylesheet" href="http://211.248.153.107:1969/resources/css/memberAddInfo.css">
+<link rel="stylesheet" href="css/jquery-ui.css">
+<script src="js/jquery-1.12.4.js"></script>
+<script type="text/javascript" src="http://211.248.153.107:1969/resources/js/addInfo_script.js"></script>
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script src="js/jquery-ui.js"></script>
+</head>
+<body>
+
+	<div id="header">
+		<div id="wrapper">
+			<div id="content">
+			<form name="addInfoFrm" id="addInfoFrm" >
+
+				<!-- ID -->
+            	<div>
+                    <h3 class="join_title">
+                    	<label for="id">
+                    		<span style="color:red;">*</span> 이메일
+                    	</label>
+                    </h3>
+                    <span class="box int_name">
+                        <input type="text" id="id" name="id" class="int" readonly>
+                        <input type="hidden" id="pwd" name="pwd">
+                        <input type="hidden" id="deviceToken" name="deviceToken">
+                    </span>
+                </div>
+
+				<!-- NAME -->
+                <div>
+                    <h3 class="join_title">
+                    	<label for="name">
+                    		<span style="color:red;">*</span> 이름
+                    	</label>
+                    </h3>
+                    <span class="box int_name">
+                        <input type="text" id="name" name="name" class="int" maxlength="20">
+                    </span>
+                    <br>
+                    <span style="float:left; color:red;;">* 실명을 입력하세요.</span>
+                </div>
+
+                <!-- BIRTH -->
+                <div>
+                    <h3 class="join_title">
+                    	<label for="yy">
+                    		<span style="color:red;">*</span> 생년월일
+                    	</label>
+                    </h3>
+
+                    <div id="bir_wrap">
+                        <!-- BIRTH_YY -->
+                        <div id="bir_yy">
+                            <span class="box">
+                                <input type="text" id="yy" class="int" maxlength="4" placeholder="년(4자)">
+                            </span>
+                        </div>
+
+                        <!-- BIRTH_MM
+                        <div id="bir_mm">
+                            <span class="box">
+                                <select id="mm" class="sel">
+                                    <option value="">월</option>
+                                    <option value="01">1</option>
+                                    <option value="02">2</option>
+                                    <option value="03">3</option>
+                                    <option value="04">4</option>
+                                    <option value="05">5</option>
+                                    <option value="06">6</option>
+                                    <option value="07">7</option>
+                                    <option value="08">8</option>
+                                    <option value="09">9</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                </select>
+                            </span>
+                        </div> -->
+
+                        <!-- BIRTH_DD
+                        <div id="bir_dd">
+                            <span class="box">
+                                <input type="text" id="dd" class="int" maxlength="2" placeholder="일">
+                            </span>
+                        </div> -->
+
+                    </div>
+                </div>
+
+                <!-- GENDER -->
+                <div>
+                    <h3 class="join_title">
+                    	<label for="gender">
+                    		<span style="color:red;">*</span> 성별
+                    	</label>
+                    </h3>
+                    <span class="box gender_code">
+                        <select id="sex" name="sex" class="sel">
+                            <option value="">선택</option>
+                            <option value="M">남자</option>
+                            <option value="F">여자</option>
+                        </select>
+                    </span>
+                </div>
+
+                <div>
+                    <h3 class="join_title">
+                    	<label for="addr">
+                    		<span style="color:red;">*</span> 주소
+                    	</label>
+                    </h3>
+                    <div id="zip_addr">
+                        <span class="box">
+	                        <select id="addr" name="addr" class="sel">
+	                        	<option value="">선택</option>
+	                            <option th:each="codeList:${addrList}" th:value="${codeList.ADDR_ID}" th:text="${codeList.ADDR_NAME}">
+	                        </select>
+                        </span>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="join_title">
+                    	<label for="organ">
+                    		<span style="color:red;">*</span> 전화번호
+                    	</label>
+                    </h3>
+                    <span class="box int_name">
+                        <input type="text" id="phone" name="phone" class="int" maxlength="11"
+                        placeholder="-없이 입력" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
+                    </span>
+                </div>
+
+				<div>
+                    <h3 class="join_title">
+                   		<label for="status">
+                   			<span style="color:red;">*</span> 장애구분
+                   		</label>
+                   	</h3>
+                    <span class="box">
+                        <select id="status" name="status" class="sel" onchange="javascript:statusChange()">
+                        	<option value="">선택</option>
+                            <option value="0">청각장애인</option>
+                            <option value="1">비장애인</option>
+                        </select>
+                    </span>
+                </div>
+
+                <div id="divStsLvl" style="display:none;">
+                    <h3 class="join_title">
+                   		<label for="level">
+                   			<span style="color:red;">*</span> 장애정도
+                   		</label>
+                   	</h3>
+                    <span class="box">
+                        <select id="statusLvl" name="statusLvl" class="sel">
+                        	<option value="">선택</option>
+                            <option value="0">심한장애</option>
+                            <option value="1">심하지 않은 장애</option>
+                        </select>
+                    </span>
+                </div>
+
+                <div>
+                    <h3 class="join_title">
+                    	<label for="organ">
+                    		<span style="color:red;">*</span> 추천기관명
+                    	</label>
+                    </h3>
+                    <span class="box int_name">
+                        <input type="text" id="organ" name="organ" class="int">
+                    </span>
+                </div>
+
+                <div>
+                    <h3 class="join_title"><label for="recomName">추천인</label></h3>
+                    <span class="box int_name">
+                        <input type="text" id="recomName" name="recomName" class="int" maxlength="20">
+                    </span>
+                </div>
+
+                <div>
+                    <h3 class="join_title"><label for="kind">선호 소통 수단</label></h3>
+                    <span class="box">
+                        <select id="kind" name="kind" class="sel">
+                        	<option value="">선택사항</option>
+                            <option value="0">자막</option>
+                            <option value="1">수어</option>
+                            <option value="2">자막+수어</option>
+                        </select>
+                    </span>
+                </div>
+
+                <!-- JOIN BTN-->
+                <div class="btn_area">
+                    <button type="button" id="btnJoin" onclick="addInfoJoin();">
+                        <span>가입하기</span>
+                    </button>
+                </div>
+                </form>
+			</div>
+		</div>
+	</div>
+
+	<script>
+
+$(function(){
+
+});
+function openZipSearch() {
+	new daum.Postcode({
+		oncomplete: function(data) {
+			$('[name=zip]').val(data.zonecode); // 우편번호 (5자리)
+			$('[name=addr1]').val(data.address);
+			$('[name=addr2]').val(data.buildingName);
+		}
+	}).open();
+}
+
+function isEmpty(){
+	var result = false;
+	$('#addInfoFrm').find('input[type != "hidden"]').each(function(){
+		if(this.id != "kind" && this.id != "recomName"){
+			if(!$(this).val()) {
+				console.log($(this));
+				result = true;
+			}
+		}
+
+	});
+
+	return result;
+}
+
+function addInfoJoin(){
+
+	var birthYy = $("#yy").val();
+	var birthMm = $("#mm").val();
+	var birthDd = $("#dd").val();
+	var sex = $("#sex").val();
+	var addr = $("#addr").val();
+	var statusLvl = $("#statusLvl").val();
+	var status = $("#status").val();
+
+	if(isEmpty() || sex == "" || addr == "" || status == ""){
+		alert('* 는 필수값입니다.');
+	}else{
+		if(status == 0 && statusLvl == ""){
+			alert('* 는 필수값입니다.');
+		}else{
+			var param = $('#addInfoFrm').serializeArray();
+
+			param.push({name: "birth", value: birthYy+birthMm+birthDd});
+
+			$.ajax({
+				url : "/addInfoMember",
+				data : param,
+				datatype : "JSON",
+				type : "POST",
+				success : function(data){
+					if(data.result == "success"){
+						alert("저장되었습니다.");
+
+						window.SORIJAVA.callbackAndroid(1);
+					}else{
+						alert("실패하였습니다.");
+					}
+				},
+				error : function(error){
+					console.log(error);
+				}
+			});
+		}
+	}
+}
+
+function statusChange(){
+	var statusVal = $("#status").val();
+
+	if(statusVal == 0){
+		$('#divStsLvl').show();
+	}else{
+		$('#divStsLvl').hide();
+	}
+}
+
+$(document).ready(function() {
+   $( "#yy" ).datepicker({
+    changeMonth: true,
+    changeYear: true,
+    yearRange: 'c-100:c+10',
+    showMonthAfterYear: true,
+    dayNamesMin: ['월', '화', '수', '목', '금', '토', '일'],
+    monthNamesShort: ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'],
+    dateFormat: "yy년 mm월 dd일",
+   });
+});
+</script>
+
+</body>
+</html>

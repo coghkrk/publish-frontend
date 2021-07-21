@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이어줌 관리자페이지</title>
+    <link rel="stylesheet" href="../css/jquery-ui.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <script src="../js/jquery-1.12.4.js"></script>
+    <script src="../js/jquery-ui.js"></script>
+    <script src="../js/main.js" defer></script>
+</head>
+<body>
+<div class="wrapper">
+
+    <!-- 헤더 영역 -->
+    <? include "../html/include/header.html"; ?>
+    <!-- // 헤더 영역 -->
+
+    <!-- 그래프 영역 -->
+    <main class="main">
+        <h2> <strong>게시판</strong> > PUSH 관리</h2>
+
+        <!-- 조회,등록 -->
+        <div class="table-form">
+            <div class="date-wrap">
+                <strong>검색일자</strong>
+                <label for="from">
+                    <i class="far fa-calendar-alt"></i>
+                </label>
+                <input type="text" id="from">
+                <span> ~ </span>
+                <label for="to">
+                    <i class="far fa-calendar-alt"></i>
+                </label>
+                <input type="text" id="to">
+            </div>
+
+            <select name="" id="">
+                <option value="">전체</option>
+                <option value="">번호</option>
+                <option value="">제목</option>
+            </select>
+
+            <input type="text" placeholder="검색어를 입력해 주세요.">
+
+            <div class="btn-wrap">
+                <button type="button" class="btn-search">조회</button>
+                <button type="button" class="btn-add" onclick="popupOpen('popup-05');">등록</button>
+                <button type="button" class="btn-delete">삭제</button>
+            </div>
+        </div>
+        <!-- // 조회,등록 -->
+
+        <!-- 그리드 -->
+        <div class="table-contents">
+    
+        </div>
+        <!-- // 그리드 -->
+
+    </main>
+    <!-- // 그래프 영역 -->
+
+</div>
+
+<!-- 팝업 영역 -->
+<? include "../html/include/popup.html"; ?>
+<!-- // 팝업 영역 -->
+
+</body>
+</html>
+    

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이어줌 관리자페이지</title>
+    <link rel="stylesheet" href="../css/jquery-ui.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <script src="../js/jquery-1.12.4.js"></script>
+    <script src="../js/jquery-ui.js"></script>
+    <script src="../js/main.js" defer></script>
+</head>
+<body>
+<div class="wrapper">
+
+    <!-- 헤더 영역 -->
+    <? include "../html/include/header.html"; ?>
+    <!-- // 헤더 영역 -->
+
+    <!-- 그래프 영역 -->
+    <main class="main">
+        <h2> <strong>통계</strong> > 이용현황</h2>
+
+        <!-- 조회,등록 -->
+        <div class="table-form">
+            <div class="date-wrap">
+                <strong>검색일자</strong>
+                <label for="from">
+                    <i class="far fa-calendar-alt"></i>
+                </label>
+                <input type="text" id="from">
+                <span> ~ </span>
+                <label for="to">
+                    <i class="far fa-calendar-alt"></i>
+                </label>
+                <input type="text" id="to">
+            </div>
+
+            <div class="btn-wrap">
+                <button type="button" class="btn-search">조회</button>
+            </div>
+        </div>
+        <!-- // 조회,등록 -->
+
+        <!-- 그래프 -->
+        <div class="graph-contents">
+            <section class="section-01">
+
+            </section>
+            <section class="section-02">
+
+            </section>
+            <section class="section-03">
+
+            </section>
+            <section class="section-04">
+
+            </section>
+        </div>
+        <!-- // 그래프 -->
+        
+    </main>
+    <!-- // 그래프 영역 -->
+    
+</div>
+
+<!-- 팝업 영역 -->
+<? include "../html/include/popup.html"; ?>
+<!-- // 팝업 영역 -->
+
+</body>
+</html>
+    

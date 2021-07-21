@@ -28,38 +28,10 @@
                 <input type="text" placeholder="관리자 이름을 입력해 주세요.">
             </td>
         </tr>
-        <tr>
-            <th>성별</th>
-            <td>
-                <input type="radio" name="gender" id="male">
-                <label for="male">남자</label>
-                <input type="radio" name="gender" id="female">
-                <label for="female">여자</label>
-            </td>
-        </tr>
-        <tr>
-            <th>생년월일</th>
-            <td>
-                <i class="far fa-calendar-alt"></i>
-                <input type="text" id="date">
-            </td>
-        </tr>
-        <tr>
-            <th>소속(기관)</th>
-            <td>
-                <input type="text" placeholder="소속명을 입력해 주세요.">
-            </td>
-        </tr>
-        <tr>
-            <th>휴대전화</th>
-            <td>
-                <input type="text" placeholder="연락처를 입력해 주세요.">
-            </td>
-        </tr>
     </table>
     <div class="btn-wrap">
-        <button type="button">등록</button>
-        <button type="button" class="btn-close">취소</button>
+        <button type="button" class="btn-add">등록</button>
+        <button type="button" class="btn-close btn-delete">취소</button>
     </div>
 </div>
 <!-- // 팝업 : 관리자 등록 -->
@@ -101,8 +73,8 @@
         </tr>
     </table>
     <div class="btn-wrap">
-        <button type="button">수정</button>
-        <button type="button" class="btn-close">취소</button>
+        <button type="button" class="btn-modify">수정</button>
+        <button type="button" class="btn-close btn-delete">취소</button>
     </div>
 </div>
 <!-- // 팝업 : 비밀번호 수정 --> 
@@ -126,8 +98,8 @@
         </tr>
     </table>
     <div class="btn-wrap">
-        <button type="button">등록</button>
-        <button type="button" class="btn-close">취소</button>
+        <button type="button" class="btn-add">등록</button>
+        <button type="button" class="btn-close btn-delete">취소</button>
     </div>
 </div>
 <!-- // 팝업 : 공지사항 등록 -->
@@ -151,8 +123,8 @@
         </tr>
     </table>
     <div class="btn-wrap">
-        <button type="button">수정</button>
-        <button type="button" class="btn-close">취소</button>
+        <button type="button" class="btn-modify">수정</button>
+        <button type="button" class="btn-close btn-delete">취소</button>
     </div>
 </div>
 <!-- // 팝업 : 공지사항 상세 -->
@@ -176,8 +148,8 @@
         </tr>
     </table>
     <div class="btn-wrap">
-        <button type="button">보내기</button>
-        <button type="button" class="btn-close">취소</button>
+        <button type="button" class="btn-add">보내기</button>
+        <button type="button" class="btn-close btn-delete">취소</button>
     </div>
 </div>
 <!-- // 팝업 : PUSH 알림 등록 -->
@@ -189,7 +161,7 @@
         승인 후 서비스 이용 가능합니다.
     </p>
     <div class="btn-wrap">
-        <button class="btn-close">확인</button>
+        <button class="btn-close btn-confirm">확인</button>
     </div>
 </div>
 <!-- // 회원가입 요청 완료 -->

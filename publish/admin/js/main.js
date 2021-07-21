@@ -1,15 +1,51 @@
+// 팝업 dim 처리
+function dim() {
+    $("<div>", {
+        css: {
+            width: "100%",
+            height: "100%",
+            position: "fixed",
+            left: "0",
+            top: "0",
+            zIndex: "0",
+            backgroundColor: "rgba(0,0,0,.8)",
+        },
+    }).appendTo("body").addClass("dim");
+}
+
+// 팝업 열기
+function popupOpen(id) { 
+    var popupHeight = $("#" + id).height();
+    var popupWidth = $("#" + id).width();
+    $("#" + id).css("display" ,"block").draggable({
+        handle: 'h3',
+        cursorAt: { top: -popupHeight/2 + 20 , left: popupWidth - popupWidth },
+    });
+    dim();
+}
+
 $(document).ready(function() {
-     // 팝업 리스트 열기
+    // [D] 팝업 리스트 열기 (개발 후 주석 또는 삭제 하셔도 됩니다.)
     $('.popup-list').change(function() {
         var list = $('.popup-list').val();
-        console.log(list);
-        $("." + list).css("display","block");
+        var popupHeight = $("." + list).height();
+        var popupWidth = $("." + list).width();
+        $("." + list).css("display","block").draggable({
+            handle: 'h3',
+            cursorAt: { top: -popupHeight/2 + 20 , left: popupWidth - 500 },
+        });
+        dim();
     });
 
     // 팝업 닫기
     $('.btn-close').click(function() {
-        $('.popup').css("display", "none");
+        $('.popup').css({
+            "display": "none",
+            "left": "50%",
+            "top": "50%"
+        });
         $('.popup-list option:eq(0)').prop("selected", true);
+        $('.dim').remove();     
     });
 
     // jQurey UI Datepicker
@@ -77,9 +113,3 @@ $(document).ready(function() {
     });
 
 });
-
-// 팝업 열기
-function popupOpen(id) { 
-    $("#" + id).css("display" ,"block");
-    console.log(id);
-}

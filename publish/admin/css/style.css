@@ -4,6 +4,30 @@ body {
     background: #efefef;
 }
 
+/* button color */
+.btn-wrap .btn-search {
+    background-color: royalblue;
+}
+.btn-wrap .btn-add {
+    background-color: yellowgreen;
+}
+.btn-wrap .btn-delete {
+    background-color: crimson;
+}
+.btn-wrap .btn-modify {
+    background-color: sandybrown;
+}
+.btn-wrap .btn-confirm {
+    background-color: skyblue;
+}
+.btn-wrap .btn-search:hover,
+.btn-wrap .btn-add:hover,
+.btn-wrap .btn-delete:hover,
+.btn-wrap .btn-modify:hover,
+.btn-wrap .btn-confirm:hover {
+    opacity: .8
+}
+
 /* 로그인 */
 .login-wrap {
     width: 100%;
@@ -206,20 +230,6 @@ body {
     color: #fff;
     border-radius: 3px;
 }
-.main .table-form .btn-wrap .btn-search {
-    background-color: royalblue;
-}
-.main .table-form .btn-wrap .btn-add {
-    background-color: yellowgreen;
-}
-.main .table-form .btn-wrap .btn-delete {
-    background-color: crimson;
-}
-.main .table-form .btn-wrap .btn-search:hover,
-.main .table-form .btn-wrap .btn-add:hover,
-.main .table-form .btn-wrap .btn-delete:hover {
-    opacity: .8
-}
 .main .table-contents {
     height: calc(100vh - 240px);
     background: #fff;
@@ -245,13 +255,14 @@ body {
 /* 팝업 */
 .popup {
     display: none;
-    width: 600px;
+    width: 500px;
     height: auto;
     position: fixed;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    border: 1px solid #aaa;
+    z-index: 1000;
+    border-radius: 3px;
     background: #fff;
 }
 .popup h3 {
@@ -275,10 +286,6 @@ body {
 .popup table tr {
     height: 60px;
     position: relative;
-}
-.popup table tr:last-child th,
-.popup table tr:last-child td {
-    border-bottom: none;
 }
 .popup table tr th,
 .popup table tr td {
@@ -346,36 +353,29 @@ body {
 }
 .popup .btn-wrap {
     display: flex;
+    justify-content: center;
 }
 .popup .btn-wrap button {
     display: inline-block;
-    width: 50%;
-    padding: 18px 0;
-    border-top: 1px solid #e0e0e0;
-    background: #e9e9e9;
+    width: 100px;
+    padding: 7px 0;
     font-size: 14px;
-}
-.popup .btn-wrap button:hover {
-    color: #7a2020;
-    background-color: #ddd;
-    font-weight: bold;
-}
-.popup .btn-wrap button:nth-of-type(1) {
-    border-right: 1px solid #bbb;
+    border-radius: 3px;
+    margin: 15px 10px;
+    color: #fff;
 }
 .popup-confirm {
     width: 400px;
 }
 .popup-confirm p {
     text-align: center;
-    background: #f9f9f9;
     padding: 35px 0;
     line-height: 30px;
 }
 .popup-confirm .btn-wrap button {
-    width: 100%;
-    border-right: none !important;
-    border-top: 1px solid #bbb;
+    width: 100px;
+    border-radius: 3px;
+    padding: 7px 0;
 }
 
 /* 2021.07.19 jQurey UI css 추가 */

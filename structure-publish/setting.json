@@ -1,0 +1,37 @@
+{
+    "editor.fontFamily": "Hack, 메이플스토리, Consolas, 'Courier New', monospace",
+    "liveServer.settings.donotShowInfoMsg": true,
+    "gitlens.advanced.messages": {
+        "suppressGitMissingWarning": true
+    },
+    "editor.codeActionsOnSave": null,
+    "liveSassCompile.settings.autoprefix": [],
+    "liveSassCompile.settings.generateMap": false,
+    "liveSassCompile.settings.formats": [
+        {
+            "format": "expanded",
+            "extensionName": ".css",
+            "savePath": "~/../css/ui"
+        },
+        {
+            "format": "compressed",
+            "extensionName": ".min.css",
+            "savePath": "~/../css/ui/min"
+        }
+    ],
+    "liveSassCompile.settings.includeItems": [
+        "css/sass/reset.scss",
+        "css/sass/style.scss",
+        "css/sass/responsive.scss",
+    ],
+    "sass.andStared": [
+        "active",
+        "focus",
+        "hover",
+        "nth-child"
+    ],
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.colorTheme": "Cyberpunk",
+    "editor.fontSize": 13,
+    "window.zoomLevel": -1
+}

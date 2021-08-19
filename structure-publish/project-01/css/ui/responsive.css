@@ -1,0 +1,19 @@
+@charset "UTF-8";
+/* --------------------------------------------------------------------
+    파일 : responsive.css
+    정의 : 반응형 css
+    작성자 : joy
+    작성일 : 2021.05.12
+ ---------------------------------------------------------------------- */
+@media screen and (max-width: 768px) {
+  .css-rem {
+    margin: 5rem;
+    font-size: 2.75rem;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  html {
+    font-size: 0.5rem;
+  }
+}

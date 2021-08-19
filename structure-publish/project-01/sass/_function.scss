@@ -1,0 +1,18 @@
+// -------------------------------------------------------
+// 파일 : _function.scss
+// 정의 : function 선언
+// 작성자 : joy
+// 작성일 : 2021.05.12
+// --------------------------------------------------------
+@import './variable';
+
+// 단위 제거 함수
+@function deUnit($value) {
+    @return ($value / ($value * 0 + 1))
+};
+
+// px -> rem
+@function rem ($px, $base: $base-size) {
+    @return (deUnit($px) / $base) * 1rem
+};
+

@@ -1,0 +1,22 @@
+/* --------------------------------------------------------------------
+    파일 : responsive.css
+    정의 : 반응형 css
+    작성자 : joy
+    작성일 : 2021.05.12
+ ---------------------------------------------------------------------- */
+@import './variable';
+@import './function';
+@import './mixin';
+
+@include tablet {
+    .css-rem {
+        margin: rem(80px);
+        font-size: rem(44px);
+    }
+}
+
+@include mobile {
+    html{
+        font-size: rem(8px);
+    }
+}

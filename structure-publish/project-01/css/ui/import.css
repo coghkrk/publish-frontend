@@ -6,6 +6,6 @@
     작성일 : 2021.05.12
  ---------------------------------------------------------------------- */
 
-@import './min/reset.min.css';
-@import './min/main.min.css';
+@import '/structure-publish/commons/css/reset.min.css';
+@import './main/main.min.css';
 @import './min/responsive.min.css';

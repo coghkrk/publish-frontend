@@ -1,7 +1,12 @@
+# 퍼블리싱 가이드 정의 
+
 > # 이력
 * v0.0.1
     * 2021.02.01
         * 1차 완료
+    
+    * 2021.06.21 ~ 
+        * 업데이트 중
       &nbsp;
       &nbsp;  
       &nbsp;  
@@ -134,7 +139,7 @@
       <td>이미지 - 임시 이미지</td> 
     </tr>
     <tr>
-      <td rowspan="7">html</td> 
+      <td rowspan="7">components</td> 
       <td rowspan="2" colspan="2">include</td>                              
       <td>header.html</td> 
       <td>html - 인클루드</td> 
@@ -843,23 +848,3 @@
             ui.init();
         });
         ```
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

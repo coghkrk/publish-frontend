@@ -83,8 +83,13 @@
       <td>js 공통</td> 
     </tr>
     <tr>
-      <td rowspan="3">sass</td>
-       <td></td>
+      <td rowspan="2">sass</td>
+      <td colsapn="2">libs</td>
+      <td>.woff/.eot/.svg/.otp/.ttp</td> 
+      <td>폰트 파일</td> 
+    </tr>
+     <tr>
+      <td colspan="2">ui</td>
       <td>.woff/.eot/.svg/.otp/.ttp</td> 
       <td>폰트 파일</td> 
     </tr>

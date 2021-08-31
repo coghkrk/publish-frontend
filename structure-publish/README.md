@@ -85,7 +85,7 @@
     <tr>
       <td rowspan="2">sass</td>
       <td colsapn="2">libs</td>
-      <td>.woff/.eot/.svg/.otp/.ttp</td> 
+      <td></td> 
       <td>폰트 파일</td> 
     </tr>
      <tr>

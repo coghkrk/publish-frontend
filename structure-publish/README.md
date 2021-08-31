@@ -55,13 +55,13 @@
   <tbody>
     <tr>
       <td rowspan="5">commons</td> 
-      <td rowspan="2">libs</td> 
-      <td colspan="2">css</td>
+      <td rowspan="2">css</td> 
+      <td colspan="2">libs</td>
       <td>animate.css</td> 
       <td>css 라이브러리</td> 
     </tr>
     <tr>
-      <td colspan="2">js</td>
+      <td colspan="2">ui</td>
       <td>jqurey.min.js</td> 
       <td>js 라이브러리</td> 
     </tr>

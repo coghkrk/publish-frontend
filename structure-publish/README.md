@@ -58,25 +58,25 @@
       <td rowspan="2">css</td> 
       <td colspan="2">libs</td>
       <td>animate.css</td> 
-      <td>css 라이브러리</td> 
+      <td>css - 라이브러리</td> 
     </tr>
     <tr>
       <td colspan="2">ui</td>
-      <td>jqurey.min.js</td> 
-      <td>js 라이브러리</td> 
+      <td>reset.min.css</td> 
+      <td>css - 스타일 선언</td> 
     </tr>
     <tr>
-      <td colspan="3">css</td>
+      <td rowspan="2">font</td>
       <td>reset.css</td> 
       <td>css 초기화</td> 
     </tr>
     <tr>
-      <td colspan="3">js</td>
+      <td rowspan="2">js</td>
       <td>common.js</td> 
       <td>js 공통</td> 
     </tr>
     <tr>
-      <td colspan="3">font</td>
+      <td rowspan="3">sass</td>
       <td>.woff/.eot/.svg/.otp/.ttp</td> 
       <td>폰트 파일</td> 
     </tr>

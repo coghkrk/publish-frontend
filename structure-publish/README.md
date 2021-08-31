@@ -54,7 +54,7 @@
   </thead>
   <tbody>
     <tr>
-      <td rowspan="5">commons</td> 
+      <td rowspan="7">commons</td> 
       <td rowspan="2">css</td> 
       <td colspan="2">libs</td>
       <td>animate.css</td> 
@@ -66,7 +66,7 @@
       <td>css - 스타일 선언</td> 
     </tr>
     <tr>
-      <td rowspan="2">font</td>
+      <td>font</td>
       <td colspan="2"></td>
       <td>*.ttf/*.woff/.svg/.otp</td> 
       <td>폰트파일</td> 

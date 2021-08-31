@@ -67,16 +67,19 @@
     </tr>
     <tr>
       <td rowspan="2">font</td>
+      <td></td>
       <td>reset.css</td> 
       <td>css 초기화</td> 
     </tr>
     <tr>
       <td rowspan="2">js</td>
+       <td></td>
       <td>common.js</td> 
       <td>js 공통</td> 
     </tr>
     <tr>
       <td rowspan="3">sass</td>
+       <td></td>
       <td>.woff/.eot/.svg/.otp/.ttp</td> 
       <td>폰트 파일</td> 
     </tr>

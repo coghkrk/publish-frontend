@@ -63,7 +63,7 @@
     <tr>
       <td colspan="2">ui</td>
       <td>reset.min.css</td> 
-      <td>css - 스타일 선언</td> 
+      <td>css - 공통 스타일 선언</td> 
     </tr>
     <tr>
       <td>font</td>
@@ -74,24 +74,24 @@
     <tr>
       <td rowspan="2">js</td>
       <td colspan="2">libs</td>
-      <td>common.js</td> 
-      <td>js 공통</td> 
+      <td>jquery.min.js</td> 
+      <td>js - 라이브러리</td> 
     </tr>
      <tr>
       <td colspan="2">ui</td>
       <td>common.js</td> 
-      <td>js 공통</td> 
+      <td>js - 공통 스크립트 선언</td> 
     </tr>
     <tr>
       <td rowspan="2">sass</td>
-      <td colsapn="2">libs</td>
-      <td></td> 
-      <td>폰트 파일</td> 
+      <td colspan="2">libs</td>
+      <td>slick.scss</td> 
+      <td>sass - 라이브러리</td> 
     </tr>
      <tr>
       <td colspan="2">ui</td>
-      <td>.woff/.eot/.svg/.otp/.ttp</td> 
-      <td>폰트 파일</td> 
+      <td>reset.sass</td> 
+      <td>sass - 공통 스타일 선언</td> 
     </tr>
     <tr>
       <td rowspan="19">project01</td> 
